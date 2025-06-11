@@ -1,43 +1,120 @@
 import React from 'react';
+import amksImage from '../assets/images/amks.png';
+import babylahapImage from '../assets/images/babylahap.png';
+import travelImage from '../assets/images/travel.png';
+import kressImage from '../assets/images/kress.png';
+import amkssImage from '../assets/images/Amkss.png';
+import sonbrosImage from '../assets/images/sonbros.png';
 
 const Projects = () => (
   <section id="projects" className="py-12">
-    <div className="max-w-6xl mx-auto text-center">
+    <div className="mx-auto max-w-6xl text-center">
       <h3 className="text-lg text-blue-500">Proyek Saya</h3>
       <h1 className="text-3xl font-bold text-gray-800 dark:text-white">Proyek Terbaru</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-        <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
-          <img src="/images/amks.png" alt="Website Yearbook" className="w-full h-48 object-cover" />
+      <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
+          <img src={kressImage} alt="Kress Catalog" className="h-48 w-full object-cover" />
+          <div className="p-6">
+            <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Website Katalog Kress</h4>
+            <div className="mt-2 flex space-x-2">
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Full-Stack Developer</span>
+            </div>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Mengembangkan website katalog untuk Kress, sebuah proyek kripik singkong, menggunakan React.js untuk antarmuka dinamis dan fungsionalitas full-stack.
+            </p>
+            <h4 className="mt-4 text-gray-800 dark:text-white">React.js</h4>
+            <a
+              href="https://kressvercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-blue-500 hover:underline"
+            >
+              Kunjungi Website
+            </a>
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
+          <img src={amkssImage} alt="AMKS Portofolio" className="h-48 w-full object-cover" />
+          <div className="p-6">
+            <h4 className="text-xl font-semibold text-gray-800 dark:text-white">AMKS Portofolio</h4>
+            <div className="mt-2 flex space-x-2">
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Front-End Developer</span>
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Desainer UI/UX</span>
+            </div>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Merancang dan mengembangkan website portofolio untuk AMKS menggunakan React.js dan Tailwind CSS, dengan desain UI/UX di Figma untuk tampilan modern.
+            </p>
+            <h4 className="mt-4 text-gray-800 dark:text-white">Figma, React.js, Tailwind CSS</h4>
+            <a
+              href="https://amksyogyakarta.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-blue-500 hover:underline"
+            >
+              Kunjungi Website
+            </a>
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
+          <img src={sonbrosImage} alt="Sonbros Wedding" className="h-48 w-full object-cover" />
+          <div className="p-6">
+            <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Website Katalog Sonbros</h4>
+            <div className="mt-2 flex space-x-2">
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Founder</span>
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Full-Stack Developer</span>
+            </div>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Mendirikan dan mengembangkan website katalog undangan pernikahan Sonbros menggunakan React.js, Tailwind CSS, dan desain UI/UX di Figma.
+            </p>
+            <h4 className="mt-4 text-gray-800 dark:text-white">React.js, Tailwind CSS, Figma</h4>
+            <a
+              href="https://sonbrosweding.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-blue-500 hover:underline"
+            >
+              Kunjungi Website
+            </a>
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
+          <img src={amksImage} alt="Website Yearbook" className="h-48 w-full object-cover" />
           <div className="p-6">
             <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Proyek Website Yearbook untuk Asrama AMKS</h4>
-            <div className="flex space-x-2 mt-2">
-              <span className="px-2 py-1 bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-200 rounded">Full-Stack Developer</span>
-              <span className="px-2 py-1 bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-200 rounded">Desainer UI/UX</span>
+            <div className="mt-2 flex space-x-2">
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Full-Stack Developer</span>
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Desainer UI/UX</span>
             </div>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">Mengembangkan website yearbook responsif untuk Asrama AMKS menggunakan HTML dan CSS, mencapai desain UI/UX dengan fidelitas tinggi yang mencerminkan semangat komunitas.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Mengembangkan website yearbook responsif untuk Asrama AMKS menggunakan HTML dan CSS, mencapai desain UI/UX dengan fidelitas tinggi yang mencerminkan semangat komunitas.
+            </p>
             <h4 className="mt-4 text-gray-800 dark:text-white">HTML, CSS</h4>
           </div>
         </div>
-        <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
-          <img src="/images/babylahap.png" alt="Baby Lahap" className="w-full h-48 object-cover" />
+        <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
+          <img src={babylahapImage} alt="Baby Lahap" className="h-48 w-full object-cover" />
           <div className="p-6">
             <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Proyek Pemasaran Baby Lahap</h4>
-            <div className="flex space-x-2 mt-2">
-              <span className="px-2 py-1 bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-200 rounded">Pemimpin Tim Komunikasi Pemasaran</span>
+            <div className="mt-2 flex space-x-2">
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Pemimpin Tim Komunikasi Pemasaran</span>
             </div>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">Menyelenggarakan dan mengelola acara Instagram Live tentang nutrisi anak. Mengawasi strategi konten, interaksi audiens, dan analisis performa.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Menyelenggarakan dan mengelola acara Instagram Live tentang nutrisi anak. Mengawasi strategi konten, interaksi audiens, dan analisis performa.
+            </p>
             <h4 className="mt-4 text-gray-800 dark:text-white">Canva, Instagram Insights, Pengeditan Video</h4>
           </div>
         </div>
-        <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
-          <img src="/images/travel.png" alt="Wisata Lokal" className="w-full h-48 object-cover" />
+        <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
+          <img src={travelImage} alt="Wisata Lokal" className="h-48 w-full object-cover" />
           <div className="p-6">
             <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Proyek Website Wisata Lokal</h4>
-            <div className="flex space-x-2 mt-2">
-              <span className="px-2 py-1 bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-200 rounded">Front End</span>
-              <span className="px-2 py-1 bg-blue-100 dark:bg-blue-600 text-blue-800 dark:text-blue-200 rounded">Desainer UI/UX</span>
+            <div className="mt-2 flex space-x-2">
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Front End</span>
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Desainer UI/UX</span>
             </div>
-            <p className="mt-2 text-gray-600 dark:text-gray-300">Mengembangkan website wisata lokal yang di-host di localhost, menggunakan PHP, HTML, CSS, dan Bootstrap untuk desain responsif. Membuat UI/UX untuk pengalaman pengguna yang intuitif.</p>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Mengembangkan website wisata lokal yang di-host di localhost, menggunakan PHP, HTML, CSS, dan Bootstrap untuk desain responsif. Membuat UI/UX untuk pengalaman pengguna yang intuitif.
+            </p>
             <h4 className="mt-4 text-gray-800 dark:text-white">PHP, HTML, CSS, Bootstrap</h4>
           </div>
         </div>

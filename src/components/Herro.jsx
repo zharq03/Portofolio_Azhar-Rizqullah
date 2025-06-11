@@ -1,8 +1,9 @@
 import React from 'react';
+import AzharImage from '../assets/images/Azhar.png';
 
 const Hero = () => (
-  <section id="hero" className="flex flex-col md:flex-row items-center justify-between p-8 max-w-6xl mx-auto">
-    <div className="md:w-1/2 mb-8 md:mb-0">
+  <section id="hero" className="flex max-w-6xl flex-col items-center justify-between p-8 mx-auto md:flex-row">
+    <div className="mb-8 md:mb-0 md:w-1/2">
       <h3 className="text-lg text-blue-500">Nama saya</h3>
       <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
         Azhar <span className="text-blue-500">Rizqullah</span>
@@ -12,7 +13,7 @@ const Hero = () => (
       </p>
     </div>
     <div className="md:w-1/2">
-      <img src="/images/Azhar.png" alt="Azhar Rizqullah" className="w-full h-auto" />
+      <img src={AzharImage} alt="Azhar Rizqullah" className="h-auto w-full" />
     </div>
   </section>
 );

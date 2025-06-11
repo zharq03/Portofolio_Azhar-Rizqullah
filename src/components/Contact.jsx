@@ -73,6 +73,19 @@ const Contact = () => (
             </a>
           </p>
         </div>
+        <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-shadow duration-200">
+          <h4 className="text-xl font-semibold text-gray-900 dark:text-white">Facebook</h4>
+          <p>
+            <a
+              href="https://www.instagram.com/_azhar_riz/"
+              className="text-blue-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              azhar.rizqullah135@gmail.com
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </section>

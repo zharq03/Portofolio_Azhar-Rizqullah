@@ -77,12 +77,12 @@ const Contact = () => (
           <h4 className="text-xl font-semibold text-gray-900 dark:text-white">Facebook</h4>
           <p>
             <a
-              href="https://www.instagram.com/_azhar_riz/"
+              href="https://www.facebook.com/profile.php?id=61550235112183"
               className="text-blue-500 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              azhar.rizqullah135@gmail.com
+              Azhar Rizqullah
             </a>
           </p>
         </div>

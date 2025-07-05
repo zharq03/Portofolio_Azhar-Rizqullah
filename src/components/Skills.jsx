@@ -46,8 +46,8 @@ const Skills = () => (
             <ul className="list-disc pl-5 text-gray-600 dark:text-gray-300">
               <li>MySQL</li>
               <li>Python</li>
-              <li>C#</li>
-              <li>C++</li>
+              <li>Flowise</li>
+              <li>Google Collab</li>
             </ul>
           </div>
         </div>

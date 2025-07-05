@@ -24,7 +24,7 @@ const Projects = () => (
             </p>
             <h4 className="mt-4 text-gray-800 dark:text-white">React.js</h4>
             <a
-              href="https://kressvercel.app"
+              href="https://kress.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-block text-blue-500 hover:underline"
@@ -46,7 +46,7 @@ const Projects = () => (
             </p>
             <h4 className="mt-4 text-gray-800 dark:text-white">Figma, React.js, Tailwind CSS</h4>
             <a
-              href="https://amksyogyakarta.vercel.app/"
+              href="https://www.amks.web.id/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-block text-blue-500 hover:underline"
@@ -68,7 +68,7 @@ const Projects = () => (
             </p>
             <h4 className="mt-4 text-gray-800 dark:text-white">React.js, Tailwind CSS, Figma</h4>
             <a
-              href="https://sonbrosweding.vercel.app/"
+              href="https://www.sonbrosweding.my.id/"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-block text-blue-500 hover:underline"

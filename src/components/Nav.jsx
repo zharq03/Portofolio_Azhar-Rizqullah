@@ -86,28 +86,28 @@ const Nav = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden">
-        <button
-          onClick={toggleMenu}
-          className="p-2 focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          <div
-            className={`w-7 h-1 bg-gray-900 dark:bg-gray-300 mb-1.5 transition-all duration-300 ${
-              isMenuOpen ? 'rotate-45 translate-y-3.5' : ''
-            }`}
-          ></div>
-          <div
-            className={`w-7 h-1 bg-gray-900 dark:bg-gray-300 mb-1.5 transition-all duration-300 ${
-              isMenuOpen ? 'opacity-0' : ''
-            }`}
-          ></div>
-          <div
-            className={`w-7 h-1 bg-gray-900 dark:bg-gray-300 transition-all duration-300 ${
-              isMenuOpen ? '-rotate-45 -translate-y-3.5' : ''
-            }`}
-          ></div>
-        </button>
-      </div>
+  <button
+    onClick={toggleMenu}
+    className="p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md"
+    aria-label="Toggle menu"
+  >
+    <div
+      className={`w-8 h-1 bg-gray-500 dark:bg-gray-800 mb-1.5 rounded-full transition-all duration-300 ${
+        isMenuOpen ? 'rotate-45 translate-y-2.5' : ''
+      }`}
+    ></div>
+    <div
+      className={`w-8 h-1 bg-gray-500 dark:bg-gray-800 mb-1.5 rounded-full transition-all duration-300 ${
+        isMenuOpen ? 'opacity-0' : ''
+      }`}
+    ></div>
+    <div
+      className={`w-8 h-1 bg-gray-500 dark:bg-gray-800 rounded-full transition-all duration-300 ${
+        isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''
+      }`}
+    ></div>
+  </button>
+</div>
 
       {/* Mobile Navigation */}
       {isMenuOpen && (

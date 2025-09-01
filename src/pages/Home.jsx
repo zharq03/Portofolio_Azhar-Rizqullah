@@ -5,6 +5,7 @@ import Passion from '../components/Passion.jsx';
 import Projects from '../components/Projects.jsx';
 import Skills from '../components/Skills.jsx';
 import Contact from '../components/Contact.jsx';
+import Sertifikat from '../components/Sertifikat.jsx';
 import WelcomePopup from '../components/WelcomePopup.jsx';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Nav />
       <Herro />
       <Passion />
+      <Sertifikat />
       <Projects />
       <Skills />
       <Contact />

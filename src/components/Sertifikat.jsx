@@ -69,8 +69,8 @@ const Sertifikat = () => {
   return (
     <section id="sertifikat" className="py-12">
       <div className="mx-auto max-w-6xl text-center">
-        <h3 className="text-lg text-blue-500">Sertifikat Pengalaman</h3>
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white">Sertifikat Pengalaman</h1>
+        <h3 className="text-lg text-blue-500">Pencapaian Profesional</h3>
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-white mt-2">Sertifikat & Pengalaman</h1>
         <div className="mt-8 grid grid-cols-1 gap-8">
           {sertifikat.map((sertifikat, index) => (
             <div

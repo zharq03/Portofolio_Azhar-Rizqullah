@@ -55,6 +55,13 @@ const Nav = () => {
           Passion
         </a>
         <a
+          href="#sertifikat"
+          onClick={() => scrollToSection('#sertifikat')}
+          className="text-gray-900 dark:text-gray-300 hover:text-blue-500 font-medium transition-colors duration-200"
+        >
+          Sertifikat
+        </a>
+        <a
           href="#projects"
           onClick={() => scrollToSection('#projects')}
           className="text-gray-900 dark:text-gray-300 hover:text-blue-500 font-medium transition-colors duration-200"
@@ -66,7 +73,7 @@ const Nav = () => {
           onClick={() => scrollToSection('#skills')}
           className="text-gray-900 dark:text-gray-300 hover:text-blue-500 font-medium transition-colors duration-200"
         >
-          Keterampilan & Pendidikan
+          Keterampilan
         </a>
         <a
           href="#contact"
@@ -130,6 +137,13 @@ const Nav = () => {
             Passion
           </a>
           <a
+            href="#sertifikat"
+            onClick={() => scrollToSection('#sertifikat')}
+            className="text-gray-900 dark:text-gray-300 hover:text-blue-500 font-medium text-lg transition-colors duration-200"
+          >
+            Sertifikat Pengalaman
+          </a>
+          <a
             href="#projects"
             onClick={() => scrollToSection('#projects')}
             className="text-gray-900 dark:text-gray-300 hover:text-blue-500 font-medium text-lg transition-colors duration-200"
@@ -141,7 +155,7 @@ const Nav = () => {
             onClick={() => scrollToSection('#skills')}
             className="text-gray-900 dark:text-gray-300 hover:text-blue-500 font-medium text-lg transition-colors duration-200"
           >
-            Keterampilan & Pendidikan
+            Keterampilan
           </a>
           <a
             href="#contact"

@@ -12,7 +12,7 @@ const sertifikat = [
     alt: 'MSIB Batch 7 Certificate',
     title: 'Peserta MSIB Batch 7 - PT Kinema Systrans Multimedia',
     date: 'Januari 2025',
-    description: 'Diberikan atas keberhasilan menyelesaikan program MSIB Batch 7 di PT Kinema Systrans Multimedia, dengan tugas mengembangkan fitur multimedia interaktif, mengelola basis data konten, dan berkolaborasi dalam tim untuk mengoptimalkan pengalaman pengguna pada platform digital.',
+    description: 'Diberikan atas keberhasilan menyelesaikan program MSIB Batch 7 di PT Kinema Systrans Multimedia.',
   },
   {
     image: infiniteImage,

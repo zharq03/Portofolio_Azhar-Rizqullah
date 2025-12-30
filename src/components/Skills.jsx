@@ -9,17 +9,17 @@ const Skills = () => (
           <div className="flex mb-6">
             <div className="w-4 bg-blue-500 rounded-full"></div>
             <div className="ml-4">
-              <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Studi Independen - Infinite Learning</h4>
-              <p className="text-gray-600 dark:text-gray-300">Pengembang Web UI/UX</p>
-              <h4 className="text-gray-800 dark:text-white">2024 - ...</h4>
+              <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Universitas AMIKOM - Yogyakarta</h4>
+              <p className="text-gray-600 dark:text-gray-300">Mahasiswa Informatika</p>
+              <h4 className="text-gray-800 dark:text-white">2022 - ...</h4>
             </div>
           </div>
           <div className="flex mb-6">
             <div className="w-4 bg-blue-500 rounded-full"></div>
             <div className="ml-4">
-              <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Universitas AMIKOM - Yogyakarta</h4>
-              <p className="text-gray-600 dark:text-gray-300">Mahasiswa Informatika</p>
-              <h4 className="text-gray-800 dark:text-white">2022 - ...</h4>
+              <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Studi Independen - Infinite Learning</h4>
+              <p className="text-gray-600 dark:text-gray-300">Pengembang Web UI/UX</p>
+              <h4 className="text-gray-800 dark:text-white">2024 - 2025</h4>
             </div>
           </div>
           <div className="flex">

@@ -5,8 +5,18 @@ import msibImage from '../assets/images/msib.png';
 import devvestImage from '../assets/images/devvest.png';
 import babylahapImage1 from '../assets/images/babylahap.png';
 import babylahapImage2 from '../assets/images/surat.png';
+import schtdy from '../assets/images/schtdy.png';
+import schtdyy from '../assets/images/schtdyy.png';
+
 
 const sertifikat = [
+  {
+    images: [schtdy, schtdyy],
+    alt: 'Magang Schoolars today Certificate',
+    title: 'Internship Schoolars today - PT Today group',
+    date: 'Desember 2025',
+    description: 'Diberikan penyelesaian magang di Scholars today sebagai Front-End Developer, dengan kontribusi pada pembangunan aplikasi web menggunakan React.js, Tailwind CSS, dan Node.js, serta merancang antarmuka pengguna yang responsif untuk proyek klien nyata.Dan karena sebagai Best Intern juga sebagai Intern yang paling rajin di today grup.',
+  },
   {
     image: msibImage,
     alt: 'MSIB Batch 7 Certificate',

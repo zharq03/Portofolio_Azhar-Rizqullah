@@ -7,6 +7,7 @@ import amkssImage from '../assets/images/Amkss.png';
 import sonbrosImage from '../assets/images/sonbros.png';
 import facedx from '../assets/images/FaceDX.png';
 import Edufarm from '../assets/images/EduFarm.png';
+import Sch from '../assets/images/Schoolars.png';
 
 
 const Projects = () => (
@@ -15,6 +16,28 @@ const Projects = () => (
       <h3 className="text-lg text-blue-500">Proyek Saya</h3>
       <h1 className="text-3xl font-bold text-gray-800 dark:text-white">Proyek Terbaru</h1>
       <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
+          <img src={Sch} alt="AMKS Portofolio" className="h-48 w-full object-cover" />
+          <div className="p-6">
+            <h4 className="text-xl font-semibold text-gray-800 dark:text-white">Placements Test dan IELTS test Schoolars Today</h4>
+            <div className="mt-2 flex space-x-2">
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Front-End Developer</span>
+              <span className="rounded bg-blue-100 px-2 py-1 text-blue-800 dark:bg-blue-600 dark:text-blue-200">Desainer UI/UX</span>
+            </div>
+            <p className="mt-2 text-gray-600 dark:text-gray-300">
+              Merancang dan mengembangkan website placements test untuk Schoolars Today  menggunakan React.js dan Tailwind CSS, dengan desain UI/UX di Figma untuk tampilan modern.
+            </p>
+            <h4 className="mt-4 text-gray-800 dark:text-white">Figma, React.js, Tailwind CSS</h4>
+            <a
+              href="https://scholarstoday.id/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-block text-blue-500 hover:underline"
+            >
+              Kunjungi Website
+            </a>
+          </div>
+        </div>        
       <div className="overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-700">
           <img src={facedx} alt="FaceDX" className="h-48 w-full object-cover" />
           <div className="p-6">

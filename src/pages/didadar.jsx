@@ -10,7 +10,7 @@ const Didadar = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    const targetDate = new Date('2026-01-15T11:00:00+07:00'); // WIB = UTC+7
+    const targetDate = new Date('2026-01-20T11:30:00+07:00'); // WIB = UTC+7
 
     const calculateTimeLeft = () => {
       const now = new Date();
@@ -72,7 +72,7 @@ const Didadar = () => {
               />
 
               <h1 className="text-4xl font-bold text-yellow-300">
-                Sidang Pendadaran
+                Undangan Akademik Sidang Pendadaran
               </h1>
               <h2 className="text-5xl font-extrabold text-white bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
                 Azhar Rizqullah
@@ -114,8 +114,8 @@ const Didadar = () => {
 
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-yellow-500">Sidang Pendadaran</h3>
-                <p className="text-lg font-semibold text-white">Kamis, 15 Januari 2026</p>
-                <p className="text-lg font-semibold text-white">Pukul 11:00 WIB</p>
+                <p className="text-lg font-semibold text-white">Seelasa, 20 Januari 2026</p>
+                <p className="text-lg font-semibold text-white">Pukul 11:30 WIB</p>
               </div>
 
               {/* Countdown modern */}
@@ -167,15 +167,15 @@ const Didadar = () => {
               </p>
 
               <p className="text-base text-yellow-300 leading-relaxed">
-                Tidak perlu hadiah, cukup bawa amplop doa dan senyuman saja. Terima kasih banyak.
+                Tidak perlu hadiah, cukup bawa amplop doa dan senyuman saja (info loker 🙏 gaji 2 Digit).
               </p>
 
               <p className="text-base leading-relaxed">
-                Terima kasih telah menjadi teman perantauan di Jogja — penuh cerita, tawa, dan kehangatan. Kalian seperti keluarga bagiku di tanah ini.
+                Terima kasih telah menjadi teman perantauan di Jogja — penuh cerita, tawa, dan kehangatan.
               </p>
 
               <p className="text-xl font-medium text-yellow-300 mt-6">
-                Jangan lupa berfoto bareng nanti ya 📸✨
+                Jangan lupa foto foto bareng nanti ya buat kenang kenangan
               </p>
 
               <motion.button

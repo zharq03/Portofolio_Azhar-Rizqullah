@@ -114,7 +114,7 @@ const Didadar = () => {
 
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold text-yellow-500">Sidang Pendadaran</h3>
-                <p className="text-lg font-semibold text-white">Seelasa, 20 Januari 2026</p>
+                <p className="text-lg font-semibold text-white">Selasa, 20 Januari 2026</p>
                 <p className="text-lg font-semibold text-white">Pukul 11:30 WIB</p>
               </div>
 

@@ -1,5 +1,23 @@
 'use client';
+import { html, u } from 'framer-motion/client';
 import { useState } from 'react';
+import arduino from '../assets/icons/arduino.png';
+import css from '../assets/icons/css3.png';
+import flask from '../assets/icons/flask.png';
+import flutter from '../assets/icons/flutter.png';
+import htmll from '../assets/icons/html5.png';
+import js from '../assets/icons/js.png';
+import kotlin from '../assets/icons/kotlin.png';
+import laravel from '../assets/icons/laravel.png';
+import mysql from '../assets/icons/mysql.png';
+import nextjs from '../assets/icons/nextjs.png';
+import nodejs from '../assets/icons/nodejs.png';
+import php from '../assets/icons/php.png';
+import python from '../assets/icons/python.png';
+import react from '../assets/icons/reactjs.png';
+import ui from '../assets/icons/ui.png';
+import ux from '../assets/icons/ux.png';
+import vuejs from '../assets/icons/vuejs.png';
 
 const tabs = [
   { id: 'frontend', label: 'FRONT END' },
@@ -13,26 +31,100 @@ const skillsData = {
   frontend: [
     {
       name: 'HTML',
-      logo: '/assets/icons/html5.svg',
+      image: htmll,
       desc: 'HTML, atau HyperText Markup Language, adalah bahasa markup yang digunakan untuk membuat struktur dasar sebuah halaman web. Dengan HTML, Anda dapat menentukan bagaimana konten pada halaman web Anda akan diorganisir dan ditampilkan di browser.',
     },
     {
       name: 'CSS',
-      logo: '/assets/icons/css3.svg',
+      image: css,
       desc: 'CSS, atau Cascading Style Sheets, adalah bahasa yang digunakan untuk memberikan gaya atau tata letak (styling) pada elemen-elemen HTML. Dengan CSS, Anda dapat mengendalikan tampilan visual dari halaman web Anda secara terpisah dari struktur.',
     },
     {
+      name: 'js',
+      logo: js,
+      desc: '',
+    },
+    {
       name: 'React',
-      logo: '/assets/icons/react.svg',
+      logo: react,
       desc: 'React adalah library JavaScript open-source yang populer untuk membangun antarmuka pengguna (user interface) yang interaktif, cepat, dan reusable. Cocok untuk aplikasi web modern dan single-page application (SPA).',
     },
-    // tambahkan skill lain di sini
+    {
+      name: 'nextjs',
+      logo: nextjs,
+      desc: '',
+    },
+    {
+      name: 'vuejs',
+      logo: vuejs,
+      desc: '',
+    },
   ],
-  // isi tab lain sesuai kebutuhan
-  backend: [],
-  mobile: [],
-  uiux: [],
-  iot: [],
+  backend: [
+    {
+      name: 'Mysql',
+      image: mysql,
+      desc: '.',
+    },
+    {
+      name: 'php',
+      logo: php,
+      desc: '',
+    },
+    {
+      name: 'python',
+      logo: python,
+      desc: '',
+    },
+    {
+      name: 'laravel',
+      image: laravel,
+      desc: '.',
+    },
+    {
+      name: 'flask',
+      logo: flask,
+      desc: '',
+    },
+    {
+      name: 'nodejs',
+      logo: nodejs,
+      desc: '',
+    },
+  ],
+  mobile: [
+
+    {
+      name: 'kotlin',
+      image: kotlin,
+      desc: '',
+    },
+    {
+      name: 'flutter',
+      image: flutter,
+      desc: '',
+    },
+  ],
+  uiux: [
+    {
+      name: 'ui',
+      image: ui,
+      desc: '',
+    },
+    {
+      name: 'ux',
+      image: ux,
+      desc: '',
+    },
+
+  ],
+  iot: [
+    {
+      name: 'arduino',
+      image: arduino,
+      desc: '',
+    },
+  ],
 };
 
 export default function KeahlianPage() {

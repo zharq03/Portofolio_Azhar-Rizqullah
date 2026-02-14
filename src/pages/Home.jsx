@@ -1,26 +1,45 @@
-import React from 'react';
-import Nav from '../components/Nav.jsx';
-import Herro from '../components/Herro.jsx';
-import Passion from '../components/Passion.jsx';
-import Projects from '../components/Projects.jsx';
-import Skills from '../components/Skills.jsx';
-import Contact from '../components/Contact.jsx';
-import Sertifikat from '../components/Sertifikat.jsx';
-import WelcomePopup from '../components/WelcomePopup.jsx';
+// src/pages/Home.jsx
+import { useState } from 'react'
+import Navbar from '../components/Navbar'
+import TabSwitcher from '../components/TabSwitcher'
+import Hero from '../components/Hero'
+import Skills from '../components/Skills'
+import Experience from '../components/Experience'
+import Certificates from '../components/Certificates'
+import Contact from '../components/Contact'
 
-const Home = () => {
+export default function Home() {
+  const [activeTab, setActiveTab] = useState('profil')
+
   return (
-    <div>
-      <Nav />
-      <Herro />
-      <Passion />
-      <Sertifikat />
-      <Projects />
-      <Skills />
-      <Contact />
-      <WelcomePopup />
-    </div>
-  );
-};
+    <div className="min-h-screen">  {/* bg/text dari index.css var(--bg) */}
+      <Navbar />
 
-export default Home;
+      <main className="">
+        <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <TabSwitcher activeTab={activeTab} setActiveTab={setActiveTab} />
+
+          {activeTab === 'profil' && (
+            <div className="space-y-24 mt-12">
+              <Hero />
+              <Skills />
+              <Contact />
+            </div>
+          )}
+
+          {activeTab === 'riwayat' && (
+            <div className="mt-12">
+              <Experience extended={true} />
+            </div>
+          )}
+
+          {activeTab === 'sertifikat' && (
+            <div className="mt-12">
+              <Certificates />
+            </div>
+          )}
+        </div>
+      </main>
+    </div>
+  )
+}

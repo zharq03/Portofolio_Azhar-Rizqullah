@@ -1,27 +1,13 @@
-// src/main.jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './index.css'
-
-
-import Home from './pages/Home.jsx'      
-import Didadar from './pages/didadar.jsx'  
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,                   
-  },
-  {
-    path: "/didadar",
-    element: <Didadar />,                
-  },
-
-])
+import { BrowserRouter } from 'react-router-dom'
+import App from './App.jsx'
+import './index.css'  // atau globals.css kalau pakai Tailwind
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 )

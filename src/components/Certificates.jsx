@@ -49,7 +49,6 @@ export default function Certificates() {
                   className="inline-flex items-center gap-2 px-6 py-3 bg-accent-red  font-semibold rounded-lg hover:bg-red-700 transition self-start"
                 >
                   Lihat PDF
-                  <span>↗</span>
                 </a>
               )}
             </div>

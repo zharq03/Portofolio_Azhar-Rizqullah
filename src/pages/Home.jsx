@@ -6,7 +6,6 @@ import Hero from '../components/Hero'
 import Skills from '../components/Skills'
 import Experience from '../components/Experience'
 import Certificates from '../components/Certificates'
-import Contact from '../components/Contact'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('profil')
@@ -23,7 +22,6 @@ export default function Home() {
             <div className="space-y-24 mt-12">
               <Hero />
               <Skills />
-              <Contact />
             </div>
           )}
 

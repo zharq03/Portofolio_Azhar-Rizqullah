@@ -40,89 +40,87 @@ const skillsData = {
       desc: 'CSS, atau Cascading Style Sheets, adalah bahasa yang digunakan untuk memberikan gaya atau tata letak (styling) pada elemen-elemen HTML. Dengan CSS, Anda dapat mengendalikan tampilan visual dari halaman web Anda secara terpisah dari struktur.',
     },
     {
-      name: 'js',
-      logo: js,
-      desc: '',
+      name: 'JavaScript',
+      image: js,
+      desc: 'JavaScript adalah bahasa pemrograman dinamis yang membuat website interaktif. Saya menggunakannya untuk menangani logika sisi klien, manipulasi DOM, event handling, serta integrasi API dan state management pada aplikasi web modern.',
     },
     {
       name: 'React',
-      logo: react,
-      desc: 'React adalah library JavaScript open-source yang populer untuk membangun antarmuka pengguna (user interface) yang interaktif, cepat, dan reusable. Cocok untuk aplikasi web modern dan single-page application (SPA).',
+      image: react,
+      desc: 'React adalah library JavaScript open-source yang populer untuk membangun antarmuka pengguna (user interface) yang interaktif, cepat, dan reusable. Cocok untuk aplikasi web modern dan single-page application (SPA). Saya sering menggunakannya bersama hooks, context, dan state management seperti Zustand atau Redux.',
     },
     {
-      name: 'nextjs',
-      logo: nextjs,
-      desc: '',
+      name: 'Next.js',
+      image: nextjs,
+      desc: 'Next.js adalah framework React full-stack yang powerful untuk membangun aplikasi web performa tinggi dengan fitur seperti Server-Side Rendering (SSR), Static Site Generation (SSG), API Routes, dan App Router. Saya menggunakannya untuk proyek yang butuh SEO baik dan loading cepat.',
     },
     {
-      name: 'vuejs',
-      logo: vuejs,
-      desc: '',
+      name: 'Vue.js',
+      image: vuejs,
+      desc: 'Vue.js adalah framework JavaScript progresif yang ringan dan fleksibel untuk membangun UI. Saya menggunakannya untuk proyek-proyek yang membutuhkan komponen reaktif, two-way data binding, dan kemudahan integrasi dengan library lain seperti Pinia untuk state management.',
     },
   ],
   backend: [
     {
-      name: 'Mysql',
+      name: 'MySQL',
       image: mysql,
-      desc: '.',
+      desc: 'MySQL adalah sistem manajemen database relasional open-source yang andal dan performan tinggi. Saya menggunakannya untuk merancang skema database, query kompleks dengan JOIN, indexing, serta integrasi dengan backend PHP, Laravel, atau Node.js.',
     },
     {
-      name: 'php',
-      logo: php,
-      desc: '',
+      name: 'PHP',
+      image: php,
+      desc: 'PHP adalah bahasa scripting server-side yang masih sangat populer untuk pengembangan web dinamis. Saya menggunakannya untuk membangun backend sederhana hingga menengah, terutama dikombinasikan dengan framework Laravel untuk aplikasi yang lebih scalable.',
     },
     {
-      name: 'python',
-      logo: python,
-      desc: '',
+      name: 'Python',
+      image: python,
+      desc: 'Python adalah bahasa pemrograman serbaguna yang saya gunakan untuk backend (Flask), scripting, otomatisasi, data processing, dan eksplorasi data mining. Sintaksnya yang bersih membuatnya sangat cepat untuk prototyping dan pengembangan.',
     },
     {
-      name: 'laravel',
+      name: 'Laravel',
       image: laravel,
-      desc: '.',
+      desc: 'Laravel adalah framework PHP elegan dengan fitur MVC, Eloquent ORM, Blade templating, routing, authentication, dan queue system. Saya menggunakannya untuk membangun aplikasi web full-stack dengan backend yang aman, scalable, dan mudah dikelola.',
     },
     {
-      name: 'flask',
-      logo: flask,
-      desc: '',
+      name: 'Flask',
+      image: flask,
+      desc: 'Flask adalah micro-framework Python yang ringan dan fleksibel untuk membangun API RESTful atau aplikasi web kecil hingga menengah. Cocok untuk proyek cepat, integrasi machine learning, atau backend yang tidak butuh fitur berat seperti Laravel.',
     },
     {
-      name: 'nodejs',
-      logo: nodejs,
-      desc: '',
+      name: 'Node.js',
+      image: nodejs,
+      desc: 'Node.js memungkinkan saya menjalankan JavaScript di server-side. Saya menggunakannya untuk membangun API cepat dengan Express.js, real-time features dengan Socket.io, serta integrasi database dan microservices.',
     },
   ],
   mobile: [
-
     {
-      name: 'kotlin',
-      image: kotlin,
-      desc: '',
+      name: 'Flutter',
+      image: flutter,
+      desc: 'Flutter adalah UI toolkit dari Google untuk membangun aplikasi mobile native yang indah dari satu codebase (Android & iOS). Saya menggunakannya dengan Dart untuk membuat aplikasi cross-platform dengan performa tinggi dan animasi halus.',
     },
     {
-      name: 'flutter',
-      image: flutter,
-      desc: '',
+      name: 'Kotlin',
+      image: kotlin,
+      desc: 'Kotlin adalah bahasa modern untuk pengembangan Android native. Saya menggunakannya untuk membangun aplikasi Android dengan sintaks yang lebih ringkas dan aman dibanding Java, serta integrasi dengan Jetpack Compose untuk UI modern.',
     },
   ],
   uiux: [
     {
-      name: 'ui',
+      name: 'UI Design',
       image: ui,
-      desc: '',
+      desc: 'UI Design fokus pada elemen visual dan interaksi pengguna. Saya merancang antarmuka yang intuitif, konsisten, dan estetis menggunakan prinsip desain seperti hierarchy, alignment, contrast, dan accessibility untuk meningkatkan user experience.',
     },
     {
-      name: 'ux',
+      name: 'UX Design',
       image: ux,
-      desc: '',
+      desc: 'UX Design berfokus pada pengalaman pengguna secara keseluruhan. Saya melakukan user research, membuat wireframe, user flow, prototype, dan usability testing untuk memastikan aplikasi mudah digunakan, efisien, dan memuaskan bagi pengguna.',
     },
-
   ],
   iot: [
     {
-      name: 'arduino',
+      name: 'Arduino',
       image: arduino,
-      desc: '',
+      desc: 'Arduino adalah platform open-source untuk prototipe IoT dan embedded system. Saya menggunakannya untuk membangun proyek sensor, kontrol perangkat, monitoring data real-time, serta integrasi dengan aplikasi mobile atau web melalui komunikasi serial/WiFi.',
     },
   ],
 };
@@ -175,7 +173,7 @@ export default function KeahlianPage() {
                 }`}
               >
                 <img
-                  src={skill.logo}
+                  src={skill.image}
                   alt={skill.name}
                   className="w-full h-full object-contain drop-shadow-2xl"
                 />

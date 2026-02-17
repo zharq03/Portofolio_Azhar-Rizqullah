@@ -25,10 +25,9 @@ export default function Hero() {
 
            {/* Kanan: Kartu Profil Profesional */}
           <div className="card p-8 md:p-8">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-white">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 ">
               Profil Profesional
             </h2>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
               {/* Nama Lengkap - Ikon user SVG */}
               <div className="flex items-start gap-2">
@@ -36,8 +35,8 @@ export default function Hero() {
                   <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
                 <div>
-                  <p className="text-sm text-gray-400">NAMA LENGKAP</p>
-                  <p className="text-base font-medium text-white">Azhar Rizqullah</p>
+                  <p className="text-sm ">NAMA LENGKAP</p>
+                  <p className="text-base font-medium ">Azhar Rizqullah</p>
                 </div>
               </div>
 
@@ -47,8 +46,8 @@ export default function Hero() {
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v4H7v2h4v4h2v-4h4v-2h-4V7z"/>
                 </svg>
                 <div>
-                  <p className="text-sm text-gray-400">JENIS KELAMIN</p>
-                  <p className="text-base font-medium text-white">Laki-laki</p>
+                  <p className="text-sm ">JENIS KELAMIN</p>
+                  <p className="text-base font-medium ">Laki-laki</p>
                 </div>
               </div>
 
@@ -58,8 +57,8 @@ export default function Hero() {
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
                 <div>
-                  <p className="text-sm text-gray-400">DOMISILI</p>
-                  <p className="text-base font-medium text-white">Yogyakarta, Indonesia</p>
+                  <p className="text-sm ">DOMISILI</p>
+                  <p className="text-base font-medium ">Yogyakarta, Indonesia</p>
                 </div>
               </div>
 
@@ -69,7 +68,7 @@ export default function Hero() {
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                 </svg>
                 <div>
-                  <p className="text-sm text-gray-400">EMAIL</p>
+                  <p className="text-sm ">EMAIL</p>
                   <a
                     href="mailto:azhar.rizqullah@gmail.com"
                     className="text-base font-medium text-accent-red hover:underline break-all"

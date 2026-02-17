@@ -5,14 +5,14 @@ import Home from './pages/Home'
 import Keahlian from './pages/keahlian'
 import Proyek from './pages/proyek'
 import Kontak from './pages/kontak'
-import Contact from './components/Contact'   // ← ini footer global
+import Contact from './components/Contact'
 
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-grow pt-24 pb-10">  {/* flex-grow biar konten dorong footer ke bawah */}
+      <main className="flex-grow pt-24 pb-10"> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/keahlian" element={<Keahlian />} />
@@ -26,8 +26,6 @@ export default function App() {
           } />
         </Routes>
       </main>
-
-      {/* Footer global (Contact) selalu ada di bawah */}
       <Contact />
     </div>
   )

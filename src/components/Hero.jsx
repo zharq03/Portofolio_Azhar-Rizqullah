@@ -71,7 +71,7 @@ export default function Hero() {
                   <p className="text-sm ">EMAIL</p>
                   <a
                     href="mailto:azhar.rizqullah@gmail.com"
-                    className="text-base font-medium text-accent-red hover:underline break-all"
+                    className="text-base font-medium hover:underline break-all"
                   >
                     azhar.rizqullah@gmail.com
                   </a>

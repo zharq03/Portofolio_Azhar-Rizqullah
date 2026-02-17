@@ -87,10 +87,10 @@ export default function ProyekPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-      <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 tracking-tight text-white">
+      <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 tracking-tight">
         My Projects
       </h1>
-      <p className="text-center text-gray-400 mb-16 md:mb-20 text-lg md:text-xl">
+      <p className="text-center mb-16 md:mb-20 text-lg md:text-xl">
         Beberapa proyek terbaik yang pernah saya kerjakan dan banggakan
       </p>
 
@@ -98,7 +98,7 @@ export default function ProyekPage() {
         {projects.map((proj, index) => (
           <div
             key={index}
-            className="group bg-zinc-900/80 border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-red-600/50 hover:shadow-xl hover:shadow-red-900/10 transition-all duration-300 flex flex-col h-full"
+            className="group border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-red-600/50 hover:shadow-xl hover:shadow-red-900/10 transition-all duration-300 flex flex-col h-full"
           >
             <div className="relative overflow-hidden">
               <img
@@ -110,7 +110,7 @@ export default function ProyekPage() {
             </div>
 
             <div className="p-6 md:p-8 flex flex-col flex-grow">
-              <h3 className="text-2xl font-semibold text-white mb-4 group-hover:text-red-500 transition-colors">
+              <h3 className="text-2xl font-semibold mb-4 group-hover:text-red-500 transition-colors">
                 {proj.title}
               </h3>
 
@@ -118,7 +118,7 @@ export default function ProyekPage() {
                 {proj.roles.map((role, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-zinc-800 text-xs rounded-full text-gray-300 border border-zinc-700"
+                    className="px-3 py-1 text-xs rounded-full  border border-zinc-700"
                   >
                     {role}
                   </span>
@@ -127,7 +127,7 @@ export default function ProyekPage() {
 
               {/* Deskripsi dengan expand on hover */}
               <div className="relative mb-6 overflow-hidden transition-all duration-500 group-hover:max-h-[200px] max-h-24">
-                <p className="text-gray-300 text-base leading-relaxed">
+                <p className=" text-base leading-relaxed">
                   {proj.desc}
                 </p>
               </div>
@@ -137,7 +137,7 @@ export default function ProyekPage() {
                   {proj.tech.map((t, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-zinc-800/70 text-xs rounded-full text-gray-400 border border-zinc-700"
+                      className="px-3 py-1 text-xs rounded-full border border-zinc-700"
                     >
                       {t}
                     </span>
@@ -161,7 +161,7 @@ export default function ProyekPage() {
                       href={proj.extraLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-gray-400 hover:text-gray-300 text-sm transition-colors"
+                      className="inline-flex items-center gap-2 hover:text-gray-300 text-sm transition-colors"
                     >
                       {proj.extraLinkText || "Lihat Demo Lain"} →
                     </a>

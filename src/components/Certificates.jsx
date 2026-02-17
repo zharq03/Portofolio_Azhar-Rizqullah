@@ -40,7 +40,7 @@ export default function Certificates() {
 
   return (
   <section className="space-y-16 pb-20">
-    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
       Sertifikat & Penghargaan
     </h2>
 
@@ -48,11 +48,11 @@ export default function Certificates() {
       {certs.map((cert, i) => (
         <div
           key={i}
-          className="group relative bg-zinc-900/80 border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-900/20 transition-all duration-300 flex flex-col min-h-[420px] md:min-h-[460px] h-full"
+          className="group relative border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-900/20 transition-all duration-300 flex flex-col min-h-[420px] md:min-h-[460px] h-full"
         >
           {/* Gambar */}
           {cert.image && (
-            <div className="relative w-full h-56 md:h-64 flex items-center justify-center bg-zinc-950/50 overflow-hidden">
+            <div className="relative w-full h-56 md:h-64 flex items-center justify-center overflow-hidden">
               <img
                 src={cert.image}
                 alt={cert.name}
@@ -64,10 +64,10 @@ export default function Certificates() {
           {/* Konten teks */}
           <div className="p-6 md:p-8 flex flex-col flex-grow">
             <div className="flex-grow">
-              <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-red-400 transition-colors">
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-red-400 transition-colors">
                 {cert.name}
               </h3>
-              <p className="text-gray-400 text-sm md:text-base leading-relaxed line-clamp-5 md:line-clamp-none">
+              <p className=" text-sm md:text-base leading-relaxed line-clamp-5 md:line-clamp-none">
                 {cert.description}
               </p>
             </div>

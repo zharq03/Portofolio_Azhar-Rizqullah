@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import Keahlian from './pages/Keahlian'
+import Keahlian from './pages/keahlian'
 import Proyek from './pages/proyek'
 import Kontak from './pages/kontak'
 import Contact from './components/Contact'   // ← ini footer global

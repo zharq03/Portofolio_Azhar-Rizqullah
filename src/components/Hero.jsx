@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="text-center md:text-left">
             <div className="relative inline-block">
               <img
-                src="/assets/images/Azhar.png"
+                src="/assets/images/azharr.png"
                 alt="Azhar Rizqullah"
                 className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-8 border-accent-red mx-auto md:mx-0 shadow-2xl"
               />

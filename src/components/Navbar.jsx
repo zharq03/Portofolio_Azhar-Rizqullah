@@ -46,7 +46,7 @@ export default function Navbar() {
           >
             <div className="relative">
               <img
-                src="/assets/images/profile.png"
+                src="/assets/images/last.png"
                 alt="Azhar Rizqullah"
                 className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-2 ring-offset-2 ring-offset-white dark:ring-offset-black ring-red-500/70 dark:ring-red-600/70 transition-all group-hover:ring-red-600"
               />

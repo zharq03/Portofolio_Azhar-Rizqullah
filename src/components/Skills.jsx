@@ -8,6 +8,7 @@ export default function Skills() {
     { name: 'Git & GitHub', level: 'Proficient' },
     { name: 'Responsive Design', level: 'Advanced' },
     { name: 'Basic Data Mining', level: 'Beginner → Intermediate' },
+    { name: 'Basic ai_ml', level: 'Beginner → Intermediate' },
   ]
 
   return (

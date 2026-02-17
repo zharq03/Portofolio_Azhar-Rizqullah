@@ -1,13 +1,16 @@
 export default function Experience({ extended = false }) {
   const educationHistory = [
-    { year: '2019 - 2022', name: 'Madrasah Aliyah Negeri Sambas', location: 'Jurusan MIPA' },
-    { year: '2022 - Sekarang', name: 'Universitas AMIKOM Yogyakarta', location: 'Informatika (Semester 7)' },
+    { year: '2010 - 2016', name: 'Sekolah Dasar Negeri 6', location: 'Sambas' },
+    { year: '2016 - 2019', name: 'Sekolah Menengah Pertama Negeri 2', location: ' Sambas' },
+    { year: '2019 - 2022', name: 'Madrasah Aliyah Negeri', location: ' Sejangkung' },
+    { year: '2022 - Sekarang', name: 'Universitas AMIKOM Yogyakarta', location: 'Yogyakarta' },
   ]
 
   const workHistory = [
-    { year: '2024 - 2025', name: 'Magang Web Development', location: 'Infinite Learning' },
-    { year: 'Januari 2025', name: 'Peserta MSIB Batch 7', location: 'PT Kinema Systrans' },
-    { year: 'Desember 2025', name: 'Front-End Developer Internship', location: 'Scholars Today – PT Today Group' },
+    { year: 'Agustus 2024 - Oktober 2024', name: 'Magang baby lahap', location: 'tangerang baby lahap' },
+    { year: 'Sepetmber 2024 - 2024', name: 'Magang Web Development', location: 'Infinite Learning' },
+    { year: 'Sepetmber 2024 - Januari 2024', name: 'Peserta MSIB Batch 7', location: 'PT Kinema Systrans' },
+    { year: 'September 2025 - Desember 2025', name: 'Front-End Developer Internship', location: 'Scholars Today – PT Today Group' },
   ]
 
   return (

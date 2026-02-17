@@ -18,13 +18,17 @@ import react from '../assets/icons/reactjs.png';
 import ui from '../assets/icons/ui.png';
 import ux from '../assets/icons/ux.png';
 import vuejs from '../assets/icons/vuejs.png';
+import imageProcessing from '../assets/icons/image-processing.png';
+import mobilenet from '../assets/icons/mobilenet.png';
+import svm from '../assets/icons/svm.png';
+import deepLearning from '../assets/icons/deep-learning.png';
 
 const tabs = [
   { id: 'frontend', label: 'FRONT END' },
   { id: 'backend', label: 'BACK END' },
   { id: 'mobile', label: 'MOBILE' },
   { id: 'uiux', label: 'UI/UX' },
-  { id: 'iot', label: 'IOT' },
+  { id: 'ai_ml', label: 'AI / ML' },
 ];
 
 const skillsData = {
@@ -116,11 +120,26 @@ const skillsData = {
       desc: 'UX Design berfokus pada pengalaman pengguna secara keseluruhan. Saya melakukan user research, membuat wireframe, user flow, prototype, dan usability testing untuk memastikan aplikasi mudah digunakan, efisien, dan memuaskan bagi pengguna.',
     },
   ],
-  iot: [
+  ai_ml: [
     {
-      name: 'Arduino',
-      image: arduino,
-      desc: 'Arduino adalah platform open-source untuk prototipe IoT dan embedded system. Saya menggunakannya untuk membangun proyek sensor, kontrol perangkat, monitoring data real-time, serta integrasi dengan aplikasi mobile atau web melalui komunikasi serial/WiFi.',
+      name: 'Image Processing',
+      image: imageProcessing,
+      desc: 'Pengolahan citra digital untuk ekstraksi fitur, preprocessing (resize, augmentasi, normalisasi), segmentasi, dan deteksi objek...',
+    },
+    {
+      name: 'MobileNet',
+      image: mobilenet,
+      desc: 'MobileNet adalah arsitektur CNN ringan yang efisien untuk perangkat mobile... mencapai akurasi 90% pada proyek FaceDX.',
+    },
+    {
+      name: 'SVM',
+      image: svm,
+      desc: 'Support Vector Machine untuk klasifikasi citra dengan kernel RBF/linear sebagai baseline model di eksperimen skripsi.',
+    },
+    {
+      name: 'Deep Learning',
+      image: deepLearning,
+      desc: 'Pengembangan, training, fine-tuning, dan deployment model neural network menggunakan Keras/TensorFlow + Flask.',
     },
   ],
 };
@@ -133,7 +152,7 @@ export default function KeahlianPage() {
       <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 tracking-tight">
         Tech Stack Expertise
       </h1>
-      <p className="text-center text-gray-400 mb-16 text-lg md:text-xl">
+      <p className="text-center mb-16 text-lg md:text-xl">
         Teknologi yang saya kuasai dan suka pakai sehari-hari
       </p>
 
@@ -188,7 +207,7 @@ export default function KeahlianPage() {
                 }`}
               >
                 <div
-                  className={`text-xs uppercase tracking-widest text-gray-500 font-medium ${
+                  className={`text-xs uppercase tracking-wides font-medium ${
                     isEven ? 'md:text-left' : 'md:text-right'
                   }`}
                 >
@@ -196,7 +215,7 @@ export default function KeahlianPage() {
                 </div>
 
                 <h3
-                  className={`text-4xl md:text-5xl font-bold text-white tracking-tight ${
+                  className={`text-4xl md:text-5xl font-bold tracking-tight ${
                     isEven ? 'md:text-left' : 'md:text-right'
                   }`}
                 >
@@ -204,7 +223,7 @@ export default function KeahlianPage() {
                 </h3>
 
                 <p
-                  className={`text-gray-300 leading-relaxed text-base md:text-lg ${
+                  className={` leading-relaxed text-base md:text-lg ${
                     isEven ? 'md:text-left' : 'md:text-right'
                   }`}
                 >
@@ -217,7 +236,7 @@ export default function KeahlianPage() {
       </div>
 
       {(!skillsData[activeTab] || skillsData[activeTab].length === 0) && (
-        <div className="text-center py-20 text-gray-400 text-xl">
+        <div className="text-center py-20 text-xl">
           Belum ada data keahlian untuk kategori ini.
         </div>
       )}

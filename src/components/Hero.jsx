@@ -14,7 +14,7 @@ export default function Hero() {
               />
             </div>
             <h1 className="mt-6 text-4xl md:text-5xl font-bold ">Azhar Rizqullah</h1>
-            <p className="mt-2 text-xl ">Web Developer & UI/UX Enthusiast</p>
+            <p className="mt-2 text-xl ">Web Developer & UI/UX</p>
 
             <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
               <span className="px-4 py-2  rounded-full text-sm border border-accent-red/50">Internship Scholars Today</span>

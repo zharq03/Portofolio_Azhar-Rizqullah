@@ -16,10 +16,10 @@ export default function ProyekPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-16 md:py-20">
-      <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 tracking-tight text-white">
+      <h1 className="text-5xl md:text-6xl font-bold text-center mb-4 tracking-tight">
         My Projects
       </h1>
-      <p className="text-center mb-12 md:mb-16 text-lg md:text-xl text-gray-400">
+      <p className="text-center mb-12 md:mb-16 text-lg md:text-xl ">
         Berbagai proyek yang telah saya kerjakan dari berbagai bidang
       </p>
 

@@ -26,7 +26,7 @@ import deepLearning from '../assets/icons/deep-learning.png';
 const tabs = [
   { id: 'frontend', label: 'FRONT END' },
   { id: 'backend', label: 'BACK END' },
-  { id: 'mobile', label: 'MOBILE' },
+  // { id: 'mobile', label: 'MOBILE' },
   { id: 'uiux', label: 'UI/UX' },
   { id: 'ai_ml', label: 'AI / ML' },
 ];
@@ -52,11 +52,6 @@ const skillsData = {
       name: 'React',
       image: react,
       desc: 'React adalah library JavaScript open-source yang populer untuk membangun antarmuka pengguna (user interface) yang interaktif, cepat, dan reusable. Cocok untuk aplikasi web modern dan single-page application (SPA). Saya sering menggunakannya bersama hooks, context, dan state management seperti Zustand atau Redux.',
-    },
-    {
-      name: 'Next.js',
-      image: nextjs,
-      desc: 'Next.js adalah framework React full-stack yang powerful untuk membangun aplikasi web performa tinggi dengan fitur seperti Server-Side Rendering (SSR), Static Site Generation (SSG), API Routes, dan App Router. Saya menggunakannya untuk proyek yang butuh SEO baik dan loading cepat.',
     },
     {
       name: 'Vue.js',
@@ -90,24 +85,19 @@ const skillsData = {
       image: flask,
       desc: 'Flask adalah micro-framework Python yang ringan dan fleksibel untuk membangun API RESTful atau aplikasi web kecil hingga menengah. Cocok untuk proyek cepat, integrasi machine learning, atau backend yang tidak butuh fitur berat seperti Laravel.',
     },
-    {
-      name: 'Node.js',
-      image: nodejs,
-      desc: 'Node.js memungkinkan saya menjalankan JavaScript di server-side. Saya menggunakannya untuk membangun API cepat dengan Express.js, real-time features dengan Socket.io, serta integrasi database dan microservices.',
-    },
   ],
-  mobile: [
-    {
-      name: 'Flutter',
-      image: flutter,
-      desc: 'Flutter adalah UI toolkit dari Google untuk membangun aplikasi mobile native yang indah dari satu codebase (Android & iOS). Saya menggunakannya dengan Dart untuk membuat aplikasi cross-platform dengan performa tinggi dan animasi halus.',
-    },
-    {
-      name: 'Kotlin',
-      image: kotlin,
-      desc: 'Kotlin adalah bahasa modern untuk pengembangan Android native. Saya menggunakannya untuk membangun aplikasi Android dengan sintaks yang lebih ringkas dan aman dibanding Java, serta integrasi dengan Jetpack Compose untuk UI modern.',
-    },
-  ],
+  // mobile: [
+  //   {
+  //     name: 'Flutter',
+  //     image: flutter,
+  //     desc: 'Flutter adalah UI toolkit dari Google untuk membangun aplikasi mobile native yang indah dari satu codebase (Android & iOS). Saya menggunakannya dengan Dart untuk membuat aplikasi cross-platform dengan performa tinggi dan animasi halus.',
+  //   },
+  //   {
+  //     name: 'Kotlin',
+  //     image: kotlin,
+  //     desc: 'Kotlin adalah bahasa modern untuk pengembangan Android native. Saya menggunakannya untuk membangun aplikasi Android dengan sintaks yang lebih ringkas dan aman dibanding Java, serta integrasi dengan Jetpack Compose untuk UI modern.',
+  //   },
+  // ],
   uiux: [
     {
       name: 'UI Design',
@@ -153,7 +143,7 @@ export default function KeahlianPage() {
         Tech Stack Expertise
       </h1>
       <p className="text-center mb-16 text-lg md:text-xl">
-        Teknologi yang saya kuasai dan suka pakai sehari-hari
+        Teknologi yang saya kuasai dan suka saya gunakan sehari-hari
       </p>
 
       {/* Tab Switcher */}

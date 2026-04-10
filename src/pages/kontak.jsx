@@ -4,24 +4,24 @@ import {
   Mail, 
   Linkedin, 
   Instagram, 
-  Twitter,  // untuk X/Twitter
+  Twitter,  
   Github, 
   Facebook, 
-  Youtube,  // bisa dipakai buat TikTok sementara
-  Link2     // alternatif generic link untuk Strava/Threads/Medium
+  Youtube,  
+  Link2   
 } from 'lucide-react';
 
 const socials = [
   { name: 'Email', icon: Mail, url: 'mailto:azharrizqullah@gmail.com' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/azharrizqullah' },
   { name: 'Instagram', icon: Instagram, url: 'https://instagram.com/azharrizqullah' },
-  { name: 'TikTok', icon: Youtube, url: 'https://tiktok.com/@azharrizqullah' },          // pakai Youtube sebagai placeholder
+  { name: 'TikTok', icon: Youtube, url: 'https://tiktok.com/@azharrizqullah' },        
   { name: 'X (Twitter)', icon: Twitter, url: 'https://x.com/azharrizqullah' },
-  { name: 'Threads', icon: Link2, url: 'https://threads.net/@azharrizqullah' },          // pakai Link2 generic
-  { name: 'Strava', icon: Link2, url: 'https://strava.com/athletes/azharrizqullah' },    // pakai Link2 generic
+  { name: 'Threads', icon: Link2, url: 'https://threads.net/@azharrizqullah' },         
+  { name: 'Strava', icon: Link2, url: 'https://strava.com/athletes/azharrizqullah' },  
   { name: 'Facebook', icon: Facebook, url: 'https://facebook.com/azharrizqullah' },
   { name: 'GitHub', icon: Github, url: 'https://github.com/azharrizqullah' },
-  { name: 'Medium', icon: Link2, url: 'https://medium.com/@azharrizqullah' },            // pakai Link2 generic
+  { name: 'Medium', icon: Link2, url: 'https://medium.com/@azharrizqullah' },          
 ];
 
 export default function KontakPage() {

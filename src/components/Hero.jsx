@@ -82,7 +82,7 @@ export default function Hero() {
             <div className="mt-8">
               <h3 className="text-xl font-semibold mb-3 ">Tentang Saya</h3>
               <p className=" leading-relaxed">
-                Halo! Saya mahasiswa Informatika semester akhir di Universitas AMIKOM Yogyakarta dengan minat besar di pengembangan web, desain UI/UX, dan pemasaran digital. Saya percaya teknologi harus mudah diakses semua orang. Melalui internship, MSIB, dan proyek pribadi, saya terus belajar menjembatani teori dan kebutuhan industri nyata.
+                Halo! Saya Fresh Graduate Mahasiswa Informatika di Universitas AMIKOM Yogyakarta dengan minat besar di pengembangan web, desain UI/UX, dan pemasaran digital. Saya percaya teknologi harus mudah diakses semua orang. Melalui internship, MSIB, dan proyek pribadi, saya terus belajar menjembatani teori dan kebutuhan industri nyata.
               </p>
             </div>
           </div>

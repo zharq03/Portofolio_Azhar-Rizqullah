@@ -11,7 +11,7 @@ export default function Contact() {
               AZHAR RIZQULLAH
             </h3>
             <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-              Mahasiswa Informatika AMIKOM Yogyakarta. Passion di web development, UI/UX, dan teknologi digital. Terbuka untuk kolaborasi proyek, freelance, atau kesempatan kerja.
+            Fresh Graduate Mahasiswa Informatika AMIKOM Yogyakarta. Passion di web development, UI/UX, dan teknologi digital. Terbuka untuk kolaborasi proyek, freelance, atau kesempatan kerja.
             </p>
           </div>
 

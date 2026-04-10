@@ -22,20 +22,20 @@ export default function ProjectGrid({ projects }) {
 
             <div className="flex flex-wrap gap-2 mb-5">
               {proj.roles.map((role, i) => (
-                <span key={i} className="px-3 py-1 text-xs rounded-full border border-zinc-700 text-gray-300">
+                <span key={i} className="px-3 py-1 text-xs rounded-full border border-zinc-700">
                   {role}
                 </span>
               ))}
             </div>
 
-            <p className="text-base leading-relaxed text-gray-300 mb-6 flex-grow">
+            <p className="text-base leading-relaxed mb-6 flex-grow">
               {proj.desc}
             </p>
 
             <div className="mt-auto">
               <div className="flex flex-wrap gap-2 mb-6">
                 {proj.tech.map((t, i) => (
-                  <span key={i} className="px-3 py-1 text-xs rounded-full border border-zinc-700 text-gray-400">
+                  <span key={i} className="px-3 py-1 text-xs rounded-full border border-zinc-700">
                     {t}
                   </span>
                 ))}

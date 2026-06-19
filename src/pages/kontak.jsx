@@ -12,16 +12,15 @@ import {
 } from 'lucide-react';
 
 const socials = [
-  { name: 'Email', icon: Mail, url: 'mailto:azharrizqullah@gmail.com' },
-  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/azharrizqullah' },
-  { name: 'Instagram', icon: Instagram, url: 'https://instagram.com/azharrizqullah' },
-  { name: 'TikTok', icon: Youtube, url: 'https://tiktok.com/@azharrizqullah' },        
-  { name: 'X (Twitter)', icon: Twitter, url: 'https://x.com/azharrizqullah' },
-  { name: 'Threads', icon: Link2, url: 'https://threads.net/@azharrizqullah' },         
-  { name: 'Strava', icon: Link2, url: 'https://strava.com/athletes/azharrizqullah' },  
-  { name: 'Facebook', icon: Facebook, url: 'https://facebook.com/azharrizqullah' },
-  { name: 'GitHub', icon: Github, url: 'https://github.com/azharrizqullah' },
-  { name: 'Medium', icon: Link2, url: 'https://medium.com/@azharrizqullah' },          
+  { name: 'Email', icon: Mail, url: 'mailto:azhar.rizqullah135@gmail.com' },
+  { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/azhar-rizqullah' },
+  { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/_azhar_riz/' },
+  { name: 'TikTok', icon: Youtube, url: 'https://www.tiktok.com/@atzh22' },        
+  { name: 'X (Twitter)', icon: Twitter, url: 'https://x.com/Zharq03' },        
+  { name: 'Strava', icon: Link2, url: 'https://strava.app.link/pa8DW68v53b' },  
+  { name: 'Facebook', icon: Facebook, url: 'https://www.facebook.com/people/Azhar-Rizqullah/61550235112183/?locale=id_ID' },
+  { name: 'GitHub', icon: Github, url: 'https://github.com/zharq03' },
+        
 ];
 
 export default function KontakPage() {

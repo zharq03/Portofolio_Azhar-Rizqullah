@@ -53,27 +53,12 @@ const skillsData = {
       image: react,
       desc: 'React adalah library JavaScript open-source yang populer untuk membangun antarmuka pengguna (user interface) yang interaktif, cepat, dan reusable. Cocok untuk aplikasi web modern dan single-page application (SPA). Saya sering menggunakannya bersama hooks, context, dan state management seperti Zustand atau Redux.',
     },
-    {
-      name: 'Vue.js',
-      image: vuejs,
-      desc: 'Vue.js adalah framework JavaScript progresif yang ringan dan fleksibel untuk membangun UI. Saya menggunakannya untuk proyek-proyek yang membutuhkan komponen reaktif, two-way data binding, dan kemudahan integrasi dengan library lain seperti Pinia untuk state management.',
-    },
   ],
   backend: [
-    {
-      name: 'MySQL',
-      image: mysql,
-      desc: 'MySQL adalah sistem manajemen database relasional open-source yang andal dan performan tinggi. Saya menggunakannya untuk merancang skema database, query kompleks dengan JOIN, indexing, serta integrasi dengan backend PHP, Laravel, atau Node.js.',
-    },
     {
       name: 'PHP',
       image: php,
       desc: 'PHP adalah bahasa scripting server-side yang masih sangat populer untuk pengembangan web dinamis. Saya menggunakannya untuk membangun backend sederhana hingga menengah, terutama dikombinasikan dengan framework Laravel untuk aplikasi yang lebih scalable.',
-    },
-    {
-      name: 'Python',
-      image: python,
-      desc: 'Python adalah bahasa pemrograman serbaguna yang saya gunakan untuk backend (Flask), scripting, otomatisasi, data processing, dan eksplorasi data mining. Sintaksnya yang bersih membuatnya sangat cepat untuk prototyping dan pengembangan.',
     },
     {
       name: 'Laravel',

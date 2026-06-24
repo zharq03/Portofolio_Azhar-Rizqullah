@@ -1,14 +1,11 @@
 export default function Skills() {
   const skills = [
-    { name: 'HTML & CSS', level: 'Expert' },
-    { name: 'JavaScript / TypeScript', level: 'Advanced' },
-    { name: 'React.js', level: 'Advanced' },
-    { name: 'Tailwind CSS', level: 'Advanced' },
+    { name: 'HTML & CSS', level: 'Beginner' },
+    { name: 'React.js', level: 'Beginner' },
+    { name: 'Tailwind CSS', level: 'Beginner' },
     { name: 'Figma / UI Design', level: 'Intermediate' },
-    { name: 'Git & GitHub', level: 'Proficient' },
+    { name: 'Git & GitHub', level: 'Beginner' },
     { name: 'Responsive Design', level: 'Advanced' },
-    { name: 'Basic Data Mining', level: 'Beginner → Intermediate' },
-    { name: 'Basic ai_ml', level: 'Beginner → Intermediate' },
   ]
 
   return (

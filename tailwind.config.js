@@ -17,8 +17,8 @@ export default {
         'bg-dark': '#0f0f0f',
         'text-dark': '#e0e0e0',
         'card-dark': '#1a1a1a',
-        'accent-red': '#6478f1',  // Slate Blue — elegan di light & dark
-        'accent': '#6478f1',
+        'accent-red': '#7c3aed',  // Violet / Amethyst — kreatif & kontras tinggi
+        'accent': '#7c3aed',
       },
     },
   },

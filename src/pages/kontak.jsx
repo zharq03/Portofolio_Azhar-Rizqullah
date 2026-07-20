@@ -46,7 +46,7 @@ export default function KontakPage() {
               placeholder="Nama Lengkap"
               value={form.nama}
               onChange={(e) => setForm({ ...form, nama: e.target.value })}
-              className="w-full text-black rounded-2xl px-8 py-5 focus:outline-none focus:border-indigo-600"
+              className="w-full text-black rounded-2xl px-8 py-5 focus:outline-none focus:border-violet-600"
               required
             />
             <input
@@ -54,7 +54,7 @@ export default function KontakPage() {
               placeholder="Email"
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
-              className="w-full text-black rounded-2xl px-8 py-5 focus:outline-none focus:border-indigo-600"
+              className="w-full text-black rounded-2xl px-8 py-5 focus:outline-none focus:border-violet-600"
               required
             />
             <textarea
@@ -62,12 +62,12 @@ export default function KontakPage() {
               placeholder="Pesan / Ide proyek kamu..."
               value={form.pesan}
               onChange={(e) => setForm({ ...form, pesan: e.target.value })}
-              className="w-full text-black rounded-2xl px-8 py-5 focus:outline-none focus:border-indigo-600"
+              className="w-full text-black rounded-2xl px-8 py-5 focus:outline-none focus:border-violet-600"
               required
             />
             <button
               type="submit"
-              className="w-full bg-indigo-600 hover:bg-indigo-700 transition py-6 rounded-2xl font-bold text-white"
+              className="w-full bg-violet-600 hover:bg-violet-700 transition py-6 rounded-2xl font-bold text-white"
             >
               KIRIM PESAN
             </button>
@@ -84,11 +84,11 @@ export default function KontakPage() {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-5  border border-transparent hover:border-indigo-600 rounded-3xl p-6 transition group"
+                className="flex items-center gap-5  border border-transparent hover:border-violet-600 rounded-3xl p-6 transition group"
               >
-                <s.icon className="w-10 h-10 text-indigo-600" strokeWidth={1.5} />
+                <s.icon className="w-10 h-10 text-violet-600" strokeWidth={1.5} />
                 <div>
-                  <div className="font-medium group-hover:text-indigo-600 transition">{s.name}</div>
+                  <div className="font-medium group-hover:text-violet-600 transition">{s.name}</div>
                   <div className="text-xs">klik untuk buka</div>
                 </div>
               </a>

@@ -77,7 +77,7 @@ export default function Experience() {
               <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-accent-red border-4 border-zinc-100 dark:border-zinc-950 transform -translate-x-1.5 md:-translate-x-2"></div>
               
               <div className="pl-10 md:pl-0 md:w-[45%] text-left md:text-right">
-                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-red bg-indigo-100 dark:bg-indigo-950/50 rounded-full mb-2">
+                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-red bg-violet-100 dark:bg-violet-950/50 rounded-full mb-2">
                   {item.year}
                 </span>
                 <h4 className="text-xl font-bold">{item.name}</h4>
@@ -109,7 +109,7 @@ export default function Experience() {
               <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-accent-red border-4 border-zinc-100 dark:border-zinc-950 transform -translate-x-1.5 md:-translate-x-2"></div>
               
               <div className="pl-10 md:pl-0 md:w-[45%] text-left md:text-right">
-                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-red bg-indigo-100 dark:bg-indigo-950/50 rounded-full mb-2">
+                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-red bg-violet-100 dark:bg-violet-950/50 rounded-full mb-2">
                   {item.year}
                 </span>
                 <h4 className="text-xl font-bold">{item.name}</h4>
@@ -141,7 +141,7 @@ export default function Experience() {
               <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-accent-red border-4 border-zinc-100 dark:border-zinc-950 transform -translate-x-1.5 md:-translate-x-2"></div>
               
               <div className="pl-10 md:pl-0 md:w-[45%] text-left md:text-right">
-                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-red bg-indigo-100 dark:bg-indigo-950/50 rounded-full mb-2">
+                <span className="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-red bg-violet-100 dark:bg-violet-950/50 rounded-full mb-2">
                   {item.year}
                 </span>
                 <h4 className="text-xl font-bold">{item.name}</h4>

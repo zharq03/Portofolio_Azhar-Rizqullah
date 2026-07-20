@@ -62,7 +62,7 @@ export default function Contact() {
               </p>
               <a
                 href="mailto:azhar.rizqullah135@gmail.com?subject=Kolaborasi%20Proyek%20-%20Azhar%20Rizqullah"
-                className="inline-block px-5 py-2.5 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition"
+                className="inline-block px-5 py-2.5 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-violet-700 transition"
               >
                 letsgo collab
               </a>

@@ -74,7 +74,7 @@ export default function Skills() {
                 key={i}
                 className="card flex items-start gap-3 group hover:border-accent-red/60 transition-all duration-300"
               >
-                <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-indigo-50 dark:bg-indigo-950/30 flex-shrink-0 mt-0.5">
+                <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-violet-50 dark:bg-violet-950/30 flex-shrink-0 mt-0.5">
                   <Icon className="w-4 h-4 text-accent-red" strokeWidth={2} />
                 </div>
                 <p className="text-sm font-medium leading-snug">{v.text}</p>
@@ -100,7 +100,7 @@ export default function Skills() {
                 key={i}
                 className="card group flex flex-col gap-3 hover:border-accent-red/50 hover:scale-[1.02] hover:shadow-xl transition-all duration-300 cursor-default"
               >
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-indigo-50 dark:bg-indigo-950/30 border border-indigo-200 dark:border-indigo-900/40">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-violet-50 dark:bg-violet-950/30 border border-violet-200 dark:border-violet-900/40">
                   <Icon className="w-5 h-5 text-accent-red" strokeWidth={1.8} />
                 </div>
                 <div>

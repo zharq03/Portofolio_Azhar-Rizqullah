@@ -1,14 +1,10 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Sun, Moon, Menu, X } from 'lucide-react';
-
-const navItems = [
-  { label: 'Keahlian', path: '/keahlian' },
-  { label: 'Proyek Saya', path: '/proyek' },
-  { label: 'Kontak', path: '/kontak' },
-];
+import { Sun, Moon, Menu, X, Globe } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Navbar() {
+  const { language, toggleLanguage } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState(() => {
     // ambil dari localStorage atau preferensi sistem
@@ -19,6 +15,12 @@ export default function Navbar() {
     }
     return 'dark';
   });
+
+  const navItems = [
+    { label: language === 'id' ? 'Keahlian' : 'Skills', path: '/keahlian' },
+    { label: language === 'id' ? 'Proyek Saya' : 'My Projects', path: '/proyek' },
+    { label: language === 'id' ? 'Kontak' : 'Contact', path: '/kontak' },
+  ];
 
   // apply theme ke html element
   useEffect(() => {
@@ -59,8 +61,8 @@ export default function Navbar() {
             </div>
           </NavLink>
 
-          {/* Desktop Menu + Theme Toggle */}
-          <div className="hidden md:flex items-center gap-10">
+          {/* Desktop Menu + Theme & Language Toggle */}
+          <div className="hidden md:flex items-center gap-8">
             <div className="flex items-center gap-8 text-sm uppercase tracking-wider font-medium">
               {navItems.map((item) => (
                 <NavLink
@@ -79,22 +81,43 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-violet-500/50"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? (
-                <Sun size={20} className="text-yellow-500" />
-              ) : (
-                <Moon size={20} className="text-indigo-600" />
-              )}
-            </button>
+            <div className="flex items-center gap-4 border-l border-gray-200/50 dark:border-gray-800/50 pl-6">
+              {/* Language Switcher */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-zinc-200 dark:border-zinc-800 hover:border-accent-red transition-colors"
+                aria-label="Switch Language"
+              >
+                <Globe size={13} />
+                <span>{language === 'id' ? 'ID' : 'EN'}</span>
+              </button>
+
+              {/* Theme Toggle */}
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-violet-500/50"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? (
+                  <Sun size={20} className="text-yellow-500" />
+                ) : (
+                  <Moon size={20} className="text-indigo-600" />
+                )}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Hamburger */}
-          <div className="md:hidden flex items-center gap-4">
+          <div className="md:hidden flex items-center gap-3">
+            {/* Language switch di mobile */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase border border-zinc-200 dark:border-zinc-800 hover:border-accent-red transition-colors"
+              aria-label="Switch Language"
+            >
+              <span>{language === 'id' ? 'ID' : 'EN'}</span>
+            </button>
+
             {/* Theme toggle di mobile */}
             <button
               onClick={toggleTheme}

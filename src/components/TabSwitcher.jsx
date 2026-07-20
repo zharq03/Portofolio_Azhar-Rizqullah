@@ -1,8 +1,12 @@
+import { useLanguage } from '../context/LanguageContext';
+
 export default function TabSwitcher({ activeTab, setActiveTab }) {
+  const { language } = useLanguage();
+
   const tabs = [
-    { id: 'profil', label: 'Profil' },
-    { id: 'riwayat', label: 'Riwayat' },
-    { id: 'sertifikat', label: 'Sertifikat' },
+    { id: 'profil', label: language === 'id' ? 'Profil' : 'Profile' },
+    { id: 'riwayat', label: language === 'id' ? 'Riwayat' : 'History' },
+    { id: 'sertifikat', label: language === 'id' ? 'Sertifikat' : 'Certificates' },
   ]
 
   return (

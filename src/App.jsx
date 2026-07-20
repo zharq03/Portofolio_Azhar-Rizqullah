@@ -6,6 +6,16 @@ import Keahlian from './pages/keahlian'
 import Proyek from './pages/proyek'
 import Kontak from './pages/kontak'
 import Contact from './components/Contact'
+import { useLanguage } from './context/LanguageContext'
+
+function NotFound() {
+  const { language } = useLanguage();
+  return (
+    <div className="text-center py-20 text-4xl text-[var(--text)]">
+      404 – {language === 'id' ? 'Halaman Tidak Ditemukan' : 'Page Not Found'}
+    </div>
+  );
+}
 
 export default function App() {
   return (
@@ -18,12 +28,8 @@ export default function App() {
           <Route path="/keahlian" element={<Keahlian />} />
           <Route path="/proyek" element={<Proyek />} />
           <Route path="/kontak" element={<Kontak />} />
-          {/* Optional: 404 */}
-          <Route path="*" element={
-            <div className="text-center py-20 text-4xl text-[var(--text)]">
-              404 - Halaman Tidak Ditemukan
-            </div>
-          } />
+          {/* 404 */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Contact />

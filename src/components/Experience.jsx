@@ -1,19 +1,26 @@
 import React from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Experience() {
+  const { language } = useLanguage();
+
   const educationHistory = [
     {
       year: '2022 - 2026',
       name: 'Universitas Amikom Yogyakarta',
-      role: 'Bachelor of Informatics, Faculty of Computer Science',
+      role: language === 'id' ? 'Sarjana Informatika, Fakultas Ilmu Komputer' : 'Bachelor of Informatics, Faculty of Computer Science',
       achievement: 'GPA 3.78 (Cumlaude)',
-      details: 'Relevant coursework: Project Management, Software Engineering, Requirements Analysis, System Analysis and Design'
+      details: language === 'id' 
+        ? 'Mata kuliah relevan: Manajemen Proyek, Rekayasa Perangkat Lunak, Analisis Kebutuhan, Analisis & Desain Sistem'
+        : 'Relevant coursework: Project Management, Software Engineering, Requirements Analysis, System Analysis and Design'
     },
     {
       year: '2024',
       name: 'Studi Independen — Infinite Learning',
       role: 'UI/UX Web Development',
-      details: 'Included Agile methodology, user research, product design lifecycle, and sprint-based project delivery'
+      details: language === 'id'
+        ? 'Termasuk metodologi Agile, riset pengguna, siklus hidup desain produk, dan pengiriman proyek berbasis sprint'
+        : 'Included Agile methodology, user research, product design lifecycle, and sprint-based project delivery'
     }
   ];
 
@@ -22,8 +29,16 @@ export default function Experience() {
       year: 'Sep – Nov 2025',
       name: 'Scholarstoday.id',
       role: 'Project & Product Support Intern',
-      location: 'Remote · Agile team of 5 · Live educational scholarship platform serving 1,000+ users',
-      achievements: [
+      location: language === 'id' 
+        ? 'Remot · Tim Agile 5 orang · Platform beasiswa aktif melayani 1.000+ pengguna' 
+        : 'Remote · Agile team of 5 · Live educational scholarship platform serving 1,000+ users',
+      achievements: language === 'id' ? [
+        'Berpartisipasi dalam perencanaan sprint, membantu menentukan prioritas tugas, estimasi lini masa, dan melacak penyelesaian target di setiap siklus pengembangan.',
+        'Menjembatani tim desainer dan developer dengan menerjemahkan prototipe Figma menjadi spesifikasi siap implementasi, mengurangi pengerjaan ulang.',
+        'Memfasilitasi riset pengguna dan pengujian kegunaan (usability testing) dengan 50+ pengguna akhir, menyintesis temuan menjadi perbaikan produk yang meningkatkan efisiensi navigasi sebesar 25% dan interaksi sebesar 20%.',
+        'Membuat dokumentasi proyek berupa spesifikasi fitur, catatan rapat, dan laporan sprint untuk menjaga keselarasan pemangku kepentingan.',
+        'Berkontribusi langsung dalam pengiriman profil penerima beasiswa, dashboard acara, dan modul donasi menggunakan React dan Tailwind CSS tepat waktu dengan rilis tanpa kendala.'
+      ] : [
         'Participated in sprint planning, helping define task priorities, estimate timelines, and track milestone completion across development cycles.',
         'Bridged design and development teams by translating Figma prototypes into implementation-ready specifications, reducing rework.',
         'Facilitated user research and usability testing with 50+ end users, synthesizing findings into product improvements that lifted navigation efficiency by 25% and engagement by 20%.',
@@ -35,8 +50,14 @@ export default function Experience() {
       year: 'Jun – Sep 2024',
       name: 'PT. Babylahap Indonesia',
       role: 'Digital Marketing Division Lead',
-      location: 'Remote · Virtual Internship, Marketing Communication',
-      achievements: [
+      location: language === 'id' 
+        ? 'Remot · Magang Virtual, Komunikasi Pemasaran' 
+        : 'Remote · Virtual Internship, Marketing Communication',
+      achievements: language === 'id' ? [
+        'Memimpin perencanaan dan eksekusi aktivitas pemasaran digital dalam divisi Komunikasi Pemasaran selama 3 bulan program magang virtual.',
+        'Mengoordinasikan strategi konten dan output tim, memperkuat komunikasi lintas divisi dan keterampilan eksekusi kampanye.',
+        'Menerapkan praktik komunikasi pemasaran yang nantinya digunakan untuk membangun dan menjalankan kehadiran media sosial Kabar Baik Studio.'
+      ] : [
         'Led planning and execution of digital marketing activities within the Marketing Communication division during a 3-month virtual internship.',
         'Coordinated content strategy and team output, strengthening cross-functional communication and campaign execution skills.',
         'Applied marketing communication practices later reused to build and run the social media presence of Kabar Baik Studio.'
@@ -48,16 +69,20 @@ export default function Experience() {
     {
       year: '2023 – 2024',
       name: 'AMIKOM Table Tennis Association',
-      role: 'Creative Division Coordinator',
-      achievements: [
+      role: language === 'id' ? 'Koordinator Divisi Kreatif' : 'Creative Division Coordinator',
+      achievements: language === 'id' ? [
+        'Memimpin dan mengoordinasikan tim kreatif, mengelola perencanaan konten, pendelegasian tugas, dan lini masa pengiriman untuk kampanye media sosial; meningkatkan interaksi sebesar 30%.'
+      ] : [
         'Led and coordinated a creative team, managing content planning, task delegation, and delivery timelines for social media campaigns; grew engagement by 30%.'
       ]
     },
     {
       year: '2023 – 2024',
       name: 'Sambas Regency Students Dormitory',
-      role: 'Secretary',
-      achievements: [
+      role: language === 'id' ? 'Sekretaris' : 'Secretary',
+      achievements: language === 'id' ? [
+        'Mengelola operasional administratif, dokumentasi, dan komunikasi pemangku kepentingan untuk 20+ anggota komunitas; membuat notulensi rapat dan melacak tindak lanjut poin aksi.'
+      ] : [
         'Managed administrative operations, documentation, and stakeholder communications for a 20+ member community; produced meeting minutes and tracked follow-through on action items.'
       ]
     }
@@ -68,7 +93,7 @@ export default function Experience() {
       {/* Pengalaman Bekerja */}
       <div className="card">
         <h3 className="text-3xl font-bold text-accent-red mb-10 text-center md:text-left border-b border-gray-200 dark:border-gray-800 pb-4">
-          Pengalaman Kerja
+          {language === 'id' ? 'Pengalaman Kerja' : 'Work Experience'}
         </h3>
         <div className="space-y-12 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-zinc-300 dark:before:bg-zinc-800">
           {workHistory.map((item, i) => (
@@ -100,7 +125,7 @@ export default function Experience() {
       {/* Riwayat Pendidikan */}
       <div className="card">
         <h3 className="text-3xl font-bold text-accent-red mb-10 text-center md:text-left border-b border-gray-200 dark:border-gray-800 pb-4">
-          Riwayat Pendidikan
+          {language === 'id' ? 'Riwayat Pendidikan' : 'Education History'}
         </h3>
         <div className="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-zinc-300 dark:before:bg-zinc-800">
           {educationHistory.map((item, i) => (
@@ -132,7 +157,7 @@ export default function Experience() {
       {/* Pengalaman Organisasi */}
       <div className="card">
         <h3 className="text-3xl font-bold text-accent-red mb-10 text-center md:text-left border-b border-gray-200 dark:border-gray-800 pb-4">
-          Pengalaman Organisasi
+          {language === 'id' ? 'Pengalaman Organisasi' : 'Organizational Experience'}
         </h3>
         <div className="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-zinc-300 dark:before:bg-zinc-800">
           {orgHistory.map((item, i) => (

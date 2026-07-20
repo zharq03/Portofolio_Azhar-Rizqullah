@@ -1,70 +1,83 @@
+import React from 'react';
 import { 
   ClipboardList, GitBranch, Target, FileText,
   Code2, Palette, BarChart2, Users,
   GraduationCap, Zap, PenTool, Rocket
 } from 'lucide-react';
-
-const coreSkills = [
-  {
-    icon: ClipboardList,
-    label: 'Requirements Analysis',
-    desc: 'BRD, User Stories, Acceptance Criteria',
-  },
-  {
-    icon: GitBranch,
-    label: 'Business Process Mapping',
-    desc: 'AS-IS / TO-BE, BPMN, Flow Diagrams',
-  },
-  {
-    icon: Target,
-    label: 'Agile & Sprint Planning',
-    desc: 'Scrum, Backlog Grooming, MoSCoW, RICE',
-  },
-  {
-    icon: Users,
-    label: 'Stakeholder Management',
-    desc: 'Facilitation, UAT, Sprint Reports',
-  },
-  {
-    icon: Palette,
-    label: 'UI/UX Design',
-    desc: 'Figma, Wireframe, Usability Testing',
-  },
-  {
-    icon: Code2,
-    label: 'Technical Literacy',
-    desc: 'HTML, CSS, JavaScript, React.js',
-  },
-  {
-    icon: BarChart2,
-    label: 'Tools & Platforms',
-    desc: 'Notion, Trello, Miro, Draw.io, Git',
-  },
-  {
-    icon: FileText,
-    label: 'Documentation',
-    desc: 'Meeting Notes, Change Logs, Feature Specs',
-  },
-];
-
-const valueProps = [
-  { icon: GraduationCap, text: 'Informatika Cumlaude GPA 3.78' },
-  { icon: Zap, text: 'Bisa koding — komunikasi lebih lancar dengan developer' },
-  { icon: PenTool, text: 'Background UI/UX — bisa review desain secara kritis' },
-  { icon: Rocket, text: 'Founder digital product (Kabar Baik Studio)' },
-];
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Skills() {
+  const { language } = useLanguage();
+
+  const coreSkills = [
+    {
+      icon: ClipboardList,
+      label: 'Requirements Analysis',
+      desc: language === 'id' ? 'BRD, User Stories, Acceptance Criteria' : 'BRD, User Stories, Acceptance Criteria',
+    },
+    {
+      icon: GitBranch,
+      label: 'Business Process Mapping',
+      desc: language === 'id' ? 'AS-IS / TO-BE, BPMN, Diagram Alir' : 'AS-IS / TO-BE, BPMN, Flow Diagrams',
+    },
+    {
+      icon: Target,
+      label: 'Agile & Sprint Planning',
+      desc: 'Scrum, Backlog Grooming, MoSCoW, RICE',
+    },
+    {
+      icon: Users,
+      label: 'Stakeholder Management',
+      desc: language === 'id' ? 'Fasilitasi, UAT, Laporan Sprint' : 'Facilitation, UAT, Sprint Reports',
+    },
+    {
+      icon: Palette,
+      label: 'UI/UX Design',
+      desc: 'Figma, Wireframe, Usability Testing',
+    },
+    {
+      icon: Code2,
+      label: 'Technical Literacy',
+      desc: 'HTML, CSS, JavaScript, React.js',
+    },
+    {
+      icon: BarChart2,
+      label: 'Tools & Platforms',
+      desc: 'Notion, Trello, Miro, Draw.io, Git',
+    },
+    {
+      icon: FileText,
+      label: 'Documentation',
+      desc: language === 'id' ? 'Notulensi Rapat, Log Perubahan, Spek Fitur' : 'Meeting Minutes, Change Logs, Feature Specs',
+    },
+  ];
+
+  const valueProps = [
+    { icon: GraduationCap, text: 'Informatika Cumlaude GPA 3.78' },
+    { 
+      icon: Zap, 
+      text: language === 'id' ? 'Bisa koding — komunikasi lebih lancar dengan developer' : 'Technical literacy — smoother communication with developers' 
+    },
+    { 
+      icon: PenTool, 
+      text: language === 'id' ? 'Background UI/UX — bisa review desain secara kritis' : 'UI/UX background — critical design review capabilities' 
+    },
+    { 
+      icon: Rocket, 
+      text: language === 'id' ? 'Founder digital product (Kabar Baik Studio)' : 'Founder of digital product (Kabar Baik Studio)' 
+    },
+  ];
+
   return (
     <section id="keahlian" className="space-y-14">
 
       {/* Value Props */}
       <div>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2">
-          Nilai Lebih Saya
+          {language === 'id' ? 'Nilai Lebih Saya' : 'My Value Proposition'}
         </h2>
         <p className="text-center text-zinc-500 dark:text-zinc-400 mb-8 text-base">
-          BA dengan latar belakang teknis — menjembatani bisnis & teknologi secara nyata
+          {language === 'id' ? 'BA dengan latar belakang teknis — menjembatani bisnis & teknologi secara nyata' : 'BA with a technical background — bridging business and technology effectively'}
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {valueProps.map((v, i) => {
@@ -90,7 +103,11 @@ export default function Skills() {
           Core Competencies
         </h2>
         <p className="text-center text-zinc-500 dark:text-zinc-400 mb-8 text-base">
-          Klik <a href="/keahlian" className="text-accent-red underline underline-offset-2 font-medium hover:opacity-80 transition">halaman Keahlian</a> untuk detail lengkap setiap kompetensi
+          {language === 'id' ? (
+            <>Klik <a href="/keahlian" className="text-accent-red underline underline-offset-2 font-medium hover:opacity-80 transition">halaman Keahlian</a> untuk detail lengkap setiap kompetensi</>
+          ) : (
+            <>Click the <a href="/keahlian" className="text-accent-red underline underline-offset-2 font-medium hover:opacity-80 transition">Skills page</a> for full details of each competency</>
+          )}
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {coreSkills.map((skill, i) => {

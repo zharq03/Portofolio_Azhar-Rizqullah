@@ -1,5 +1,8 @@
-// src/components/Contact.jsx
+import { useLanguage } from '../context/LanguageContext';
+
 export default function Contact() {
+  const { language } = useLanguage();
+
   return (
     <footer className=" border-t border-gray-200 dark:border-gray-800 py-12 md:py-16 mt-auto">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -11,24 +14,31 @@ export default function Contact() {
               AZHAR RIZQULLAH
             </h3>
             <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-            Fresh Informatics graduate (Cumlaude) pursuing a career as a Business Analyst. Experienced in requirements gathering, stakeholder coordination, and digital product lifecycle.
+              {language === 'id' 
+                ? 'Lulusan baru Informatika (Cumlaude) yang mengejar karir sebagai Business Analyst. Berpengalaman dalam pengumpulan kebutuhan, koordinasi pemangku kepentingan, dan siklus hidup produk digital.'
+                : 'Fresh Informatics graduate (Cumlaude) pursuing a career as a Business Analyst. Experienced in requirements gathering, stakeholder coordination, and digital product lifecycle.'
+              }
             </p>
           </div>
 
           {/* Kolom 2: Navigasi */}
           <div>
-            <h4 className="text-lg font-semibold text-[var(--text)] mb-5">NAVIGASI</h4>
+            <h4 className="text-lg font-semibold text-[var(--text)] mb-5">
+              {language === 'id' ? 'NAVIGASI' : 'NAVIGATION'}
+            </h4>
             <ul className="space-y-2 text-sm ">
-              <li><a href="/" className="hover:text-accent-red transition">Beranda</a></li>
-              <li><a href="/keahlian" className="hover:text-accent-red transition">Keahlian</a></li>
-              <li><a href="/proyek" className="hover:text-accent-red transition">Proyek</a></li>
-              <li><a href="/kontak" className="hover:text-accent-red transition">Kontak</a></li>
+              <li><a href="/" className="hover:text-accent-red transition">{language === 'id' ? 'Beranda' : 'Home'}</a></li>
+              <li><a href="/keahlian" className="hover:text-accent-red transition">{language === 'id' ? 'Keahlian' : 'Skills'}</a></li>
+              <li><a href="/proyek" className="hover:text-accent-red transition">{language === 'id' ? 'Proyek' : 'Projects'}</a></li>
+              <li><a href="/kontak" className="hover:text-accent-red transition">{language === 'id' ? 'Kontak' : 'Contact'}</a></li>
             </ul>
           </div>
 
           {/* Kolom 3: Hubungi Saya */}
           <div>
-            <h4 className="text-lg font-semibold text-[var(--text)] mb-5">HUBUNGI SAYA</h4>
+            <h4 className="text-lg font-semibold text-[var(--text)] mb-5">
+              {language === 'id' ? 'HUBUNGI SAYA' : 'CONTACT ME'}
+            </h4>
             <ul className="space-y-3 text-sm text-gray-500 dark:text-gray-400">
               <li className="flex items-center gap-3">
                 <span className="text-xl text-accent-red"></span>
@@ -58,13 +68,16 @@ export default function Contact() {
                 <span className=" font-medium text-sm">AVAILABLE FOR COLLABORATION</span>
               </div>
               <p className="text-xs  mb-4">
-                Terbuka untuk kolaborasi proyek, freelance, atau kesempatan kerja Business Analyst.
+                {language === 'id' 
+                  ? 'Terbuka untuk kolaborasi proyek, freelance, atau kesempatan kerja Business Analyst.'
+                  : 'Open to project collaborations, freelance, or Business Analyst career opportunities.'
+                }
               </p>
               <a
                 href="mailto:azhar.rizqullah135@gmail.com?subject=Kolaborasi%20Proyek%20-%20Azhar%20Rizqullah"
                 className="inline-block px-5 py-2.5 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-violet-700 transition"
               >
-                letsgo collab
+                {language === 'id' ? 'Mulai Kolaborasi' : 'Let\'s Collaborate'}
               </a>
             </div>
           </div>
@@ -76,5 +89,5 @@ export default function Contact() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.zharq.my.id/sitemap.xml
+Sitemap: https://www.azharriz.my.id/sitemap.xml

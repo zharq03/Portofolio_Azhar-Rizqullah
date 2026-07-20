@@ -17,7 +17,8 @@ export default {
         'bg-dark': '#0f0f0f',
         'text-dark': '#e0e0e0',
         'card-dark': '#1a1a1a',
-        'accent-red': '#ef4444',  // tetap merah di kedua mode
+        'accent-red': '#6478f1',  // Slate Blue — elegan di light & dark
+        'accent': '#6478f1',
       },
     },
   },

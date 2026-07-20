@@ -14,12 +14,12 @@ export default function Hero() {
               />
             </div>
             <h1 className="mt-6 text-4xl md:text-5xl font-bold ">Azhar Rizqullah</h1>
-            <p className="mt-2 text-xl ">Web Developer & UI/UX</p>
+            <p className="mt-2 text-xl ">Business Analyst</p>
 
             <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
-              <span className="px-4 py-2  rounded-full text-sm border border-accent-red/50">Internship Scholars Today</span>
-              <span className="px-4 py-2  rounded-full text-sm border border-accent-red/50">MSIB Batch 7</span>
-              <span className="px-4 py-2  rounded-full text-sm border border-accent-red/50">Magang Infinite Learning</span>
+              <span className="px-4 py-2  rounded-full text-sm border border-accent-red/50">Requirements Analysis</span>
+              <span className="px-4 py-2  rounded-full text-sm border border-accent-red/50">Digital Product Coordination</span>
+              <span className="px-4 py-2  rounded-full text-sm border border-accent-red/50">Cumlaude (GPA 3.78)</span>
             </div>
           </div>
 
@@ -82,7 +82,7 @@ export default function Hero() {
             <div className="mt-8">
               <h3 className="text-xl font-semibold mb-3 ">Tentang Saya</h3>
               <p className=" leading-relaxed">
-                Halo! Saya Fresh Graduate Mahasiswa Informatika di Universitas AMIKOM Yogyakarta dengan minat besar di pengembangan web, desain UI/UX, dan pemasaran digital. Saya percaya teknologi harus mudah diakses semua orang. Melalui internship, MSIB, dan proyek pribadi, saya terus belajar menjembatani teori dan kebutuhan industri nyata.
+                Fresh Informatics graduate (Cumlaude, GPA 3.78) pursuing a career as a Business Analyst, with hands-on experience in requirements gathering, stakeholder coordination, and translating business needs into actionable specifications for a live platform serving 1,000+ users. Backed by direct technical literacy (HTML, CSS, JavaScript, React) that enables credible, detail-level communication with developers and designers. Founder of an independently-operated digital product (Kabar Baik Studio), demonstrating end-to-end ownership from requirements through delivery.
               </p>
             </div>
           </div>

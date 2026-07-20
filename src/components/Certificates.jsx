@@ -48,7 +48,7 @@ export default function Certificates() {
       {certs.map((cert, i) => (
         <div
           key={i}
-          className="group relative border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-red-600/50 hover:shadow-2xl hover:shadow-red-900/20 transition-all duration-300 flex flex-col min-h-[420px] md:min-h-[460px] h-full"
+          className="group relative border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-indigo-600/50 hover:shadow-2xl hover:shadow-indigo-900/20 transition-all duration-300 flex flex-col min-h-[420px] md:min-h-[460px] h-full"
         >
           {/* Gambar */}
           {cert.image && (
@@ -64,7 +64,7 @@ export default function Certificates() {
           {/* Konten teks */}
           <div className="p-6 md:p-8 flex flex-col flex-grow">
             <div className="flex-grow">
-              <h3 className="text-xl font-semibold mb-3 group-hover:text-red-400 transition-colors">
+              <h3 className="text-xl font-semibold mb-3 group-hover:text-indigo-400 transition-colors">
                 {cert.name}
               </h3>
               <p className=" text-sm md:text-base leading-relaxed line-clamp-5 md:line-clamp-none">
@@ -79,7 +79,7 @@ export default function Certificates() {
                   href={cert.pdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-accent-red text-white font-semibold rounded-lg hover:bg-red-700 transition w-full md:w-auto justify-center md:justify-start"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-accent-red text-white font-semibold rounded-lg hover:bg-indigo-700 transition w-full md:w-auto justify-center md:justify-start"
                 >
                   Lihat PDF Lengkap
                 </a>

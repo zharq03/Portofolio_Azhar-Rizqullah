@@ -4,7 +4,7 @@ export default function ProjectGrid({ projects }) {
       {projects.map((proj, index) => (
         <div
           key={index}
-          className="group border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-red-600/50 hover:shadow-xl hover:shadow-red-900/10 transition-all duration-300 flex flex-col h-full"
+          className="group border border-zinc-800/50 rounded-3xl overflow-hidden hover:border-indigo-600/50 hover:shadow-xl hover:shadow-indigo-900/10 transition-all duration-300 flex flex-col h-full"
         >
           <div className="relative overflow-hidden">
             <img
@@ -16,7 +16,7 @@ export default function ProjectGrid({ projects }) {
           </div>
 
           <div className="p-6 md:p-8 flex flex-col flex-grow">
-            <h3 className="text-2xl font-semibold mb-4 group-hover:text-red-500 transition-colors">
+            <h3 className="text-2xl font-semibold mb-4 group-hover:text-accent-red transition-colors">
               {proj.title}
             </h3>
 
@@ -46,7 +46,7 @@ export default function ProjectGrid({ projects }) {
                   href={proj.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-red-500 hover:text-red-400 font-medium transition-colors"
+                  className="inline-flex items-center gap-2 text-accent-red hover:text-indigo-400 font-medium transition-colors"
                 >
                   {proj.linkText} →
                 </a>

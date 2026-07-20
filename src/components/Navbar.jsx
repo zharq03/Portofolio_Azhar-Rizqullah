@@ -48,12 +48,12 @@ export default function Navbar() {
               <img
                 src="/assets/images/last.png"
                 alt="Azhar Rizqullah"
-                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-2 ring-offset-2 ring-offset-white dark:ring-offset-black ring-red-500/70 dark:ring-red-600/70 transition-all group-hover:ring-red-600"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full object-cover ring-2 ring-offset-2 ring-offset-white dark:ring-offset-black ring-indigo-500/70 dark:ring-indigo-400/70 transition-all group-hover:ring-indigo-500"
               />
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white dark:border-black" />
+              <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-indigo-500 rounded-full border-2 border-white dark:border-black" />
             </div>
             <div className="hidden sm:block">
-              <div className="text-xl sm:text-2xl font-bold tracking-tight group-hover:text-red-600 transition-colors">
+              <div className="text-xl sm:text-2xl font-bold tracking-tight group-hover:text-accent-red transition-colors">
                 Azhar Rizqullah
               </div>
             </div>
@@ -69,8 +69,8 @@ export default function Navbar() {
                   className={({ isActive }) =>
                     `relative py-1 transition-colors duration-300 ${
                       isActive 
-                        ? 'text-red-600 dark:text-red-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-red-600 dark:after:bg-red-500' 
-                        : 'text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-500'
+                        ? 'text-accent-red dark:text-indigo-400 after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-accent-red dark:after:bg-indigo-400' 
+                        : 'text-gray-700 dark:text-gray-300 hover:text-accent-red dark:hover:text-indigo-400'
                     }`
                   }
                 >
@@ -82,7 +82,7 @@ export default function Navbar() {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-red-500/50"
+              className="p-2 rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500/50"
               aria-label="Toggle theme"
             >
               {theme === 'dark' ? (
@@ -131,7 +131,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `block py-3 px-4 text-base font-medium rounded-lg transition-colors ${
                     isActive
-                      ? 'bg-red-50 dark:bg-red-950/50 text-red-700 dark:text-red-400'
+                      ? 'bg-indigo-50 dark:bg-indigo-950/50 text-indigo-700 dark:text-indigo-400'
                       : 'text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800'
                   }`
                 }

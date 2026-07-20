@@ -11,7 +11,7 @@ export default function Contact() {
               AZHAR RIZQULLAH
             </h3>
             <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 leading-relaxed">
-            Fresh Graduate Mahasiswa Informatika AMIKOM Yogyakarta. Passion di web development, UI/UX, dan teknologi digital. Terbuka untuk kolaborasi proyek, freelance, atau kesempatan kerja.
+            Fresh Informatics graduate (Cumlaude) pursuing a career as a Business Analyst. Experienced in requirements gathering, stakeholder coordination, and digital product lifecycle.
             </p>
           </div>
 
@@ -32,8 +32,8 @@ export default function Contact() {
             <ul className="space-y-3 text-sm text-gray-500 dark:text-gray-400">
               <li className="flex items-center gap-3">
                 <span className="text-xl text-accent-red"></span>
-                <a href="mailto:azhar.rizqullah@gmail.com" className="hover:text-accent-red transition">
-                  azhar.rizqullah@gmail.com
+                <a href="mailto:azhar.rizqullah135@gmail.com" className="hover:text-accent-red transition">
+                  azhar.rizqullah135@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -58,11 +58,11 @@ export default function Contact() {
                 <span className=" font-medium text-sm">AVAILABLE FOR COLLABORATION</span>
               </div>
               <p className="text-xs  mb-4">
-                Terbuka untuk proyek freelance, kolaborasi UI/UX & web dev, atau kesempatan kerja.
+                Terbuka untuk kolaborasi proyek, freelance, atau kesempatan kerja Business Analyst.
               </p>
               <a
-                href="mailto:azhar.rizqullah@gmail.com?subject=Kolaborasi%20Proyek%20-%20Azhar%20Rizqullah"
-                className="inline-block px-5 py-2.5 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-red-700 transition"
+                href="mailto:azhar.rizqullah135@gmail.com?subject=Kolaborasi%20Proyek%20-%20Azhar%20Rizqullah"
+                className="inline-block px-5 py-2.5 bg-accent-red text-white text-sm font-medium rounded-lg hover:bg-indigo-700 transition"
               >
                 letsgo collab
               </a>

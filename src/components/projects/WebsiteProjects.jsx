@@ -6,6 +6,17 @@ export default function WebsiteProjects() {
 
   const projects = [
     {
+      title: "SIMAS-KS — Sistem Informasi Manajemen Asrama Mahasiswa",
+      image: "/assets/projects/simasks.png",
+      roles: ["Product Owner", "Full-Stack Developer", "Business Analyst"],
+      desc: language === 'id'
+        ? "Mengembangkan platform digital resmi untuk pengelolaan Asrama Mahasiswa Kabupaten Sambas di Yogyakarta secara kolaboratif (tim 2 orang). Merancang arsitektur sistem dari hulu ke hilir, meliputi pengelolaan keuangan dinamis dengan sinkronisasi otomatis denda piket, sistem presensi piket adaptif berbasis waktu (WIB) dengan verifikasi bukti foto, laporan analitik pengurus dengan visualisasi grafik Recharts, serta ekspor PDF laporan presensi."
+        : "Co-developed the official management system for the Sambas Regency Student Dormitory in Yogyakarta in a 2-person team. Handled the end-to-end system architecture, including dynamic financial ledger sync with picket fines, time-adaptive attendance verification with photo proof upload, division performance dashboards with Recharts, and automated PDF report exporting.",
+      tech: ["Next.js", "React.js", "Tailwind CSS", "Prisma ORM", "Recharts", "jsPDF", "System Architecture"],
+      link: "https://amksyogyakarta.my.id/",
+      linkText: language === 'id' ? "Kunjungi Website" : "Visit Website",
+    },
+    {
       title: "Kabar Baik Studio — Digital Wedding Invitation Platform",
       image: "/assets/projects/kabarbaik.png",
       roles: ["Founder", "Product Owner", "Full-Stack Developer"],
